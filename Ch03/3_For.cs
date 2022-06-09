@@ -19,56 +19,55 @@ namespace Ch03
     {
         static void Main1(string[] args)
         {
-            // 반복 for
 
-            for (int i = 1; i <= 5; i++)
+            // For (반복)
+            for (int a = 1; a <= 5; a++)
             {
-                Console.WriteLine("{0}회 반복...", i);
+                Console.WriteLine("{0}회 반복...", a);
 
             }
             Console.WriteLine();
 
 
-            //1부터 10까지 합
+            // 1~10 합
+            int sum1 = 0;
 
-            int sum = 0;
-
-            for (int k = 1; k <= 10; k++)
+            for (int b = 1; b <= 10; b++)
             {
-                sum += k;       //sum = sum + k;
+                sum1 += b;              //sum1 = sum1 + b;
             }
-            Console.WriteLine("1부터 10까지 합 : " + sum);
+            Console.WriteLine("1부터 10까지 합 : " + sum1);
             Console.WriteLine();
 
 
-            // 1부터 10까지 짝수합
-            int tot = 0;
+            // 1~10 짝수합
+            int sum2 = 0;
 
-            for (int k = 1; k <= 10; k++)
+            for (int c = 1; c <= 10; c++)
             {
-                if (k % 2 == 0)              //??????????????????
+                if (c % 2 == 0)          //
                 {
-                    tot += k;
+                    sum2 += c;
                 }
             }
 
-            Console.WriteLine("1부터 10까지 짝수합 : " + tot);
+            Console.WriteLine("1부터 10까지 짝수합 : " + sum2);
             Console.WriteLine();
 
 
-            // 중첩 반복 for   (thread라고 함)
+            // For 중첩 (반복 중첩, thread라고 함)
 
-            for (int a = 1; a <= 3; a++)
+            for (int aa = 1; aa <= 3; aa++)
             {
-                Console.WriteLine("a : " + a);
+                Console.WriteLine("A : " + aa);
 
-                for (int b = 1; b <= 4; b++)
+                for (int bb = 1; bb <= 4; bb++)
                 {
-                    Console.WriteLine("b : " + b);
+                    Console.WriteLine("B : " + bb);
 
-                    for (int c = 1; c <= 5; c++)
+                    for (int cc = 1; cc <= 5; cc++)
                     {
-                        Console.WriteLine("c : " + c);
+                        Console.WriteLine("C : " + cc);
                     }
                 }
             }
@@ -77,36 +76,45 @@ namespace Ch03
 
             //구구단
 
-            for (int x = 2; x <= 9; x++)
+            for (int e = 1; e <= 9; e++)
             {
-                Console.WriteLine("{0}단 시작", x);
+                Console.WriteLine("{0}단 시작", e);
 
-                for (int y = 1; y <= 9; y++)
+                for (int f = 1; f <= 9; f++)
                 {
-                    int z = x * y;
-                    Console.WriteLine("{0} x {1} = {2}", x, y, z);
-
+                    int g = e * f;
+                    Console.WriteLine("{0} x {1} = {2}", e, f, g);
                 }
-
-
-            }
-            Console.WriteLine();
-
-
-            // 역 별삼각형
-            for (int start = 1; start <= 10; start++)
-            {
-                for (int end = 10; start <= end; end--)
-                {
-                    Console.Write("★");
-                }
-                Console.WriteLine(); // 줄바꿈
             }
             Console.WriteLine();
 
 
             // 별삼각형
-           
+            for (int aa = 1; aa <= 10; aa++)
+            {
+                for (int bb = 1; aa >= bb; bb++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+
+
+            // 역별삼각형
+            for (int a = 1; a <= 10; a++)
+            {
+                for (int b = 10; a <= b; b--)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine(); 
+            }
+            Console.WriteLine();
+
+
+  
 
 
 

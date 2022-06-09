@@ -20,38 +20,43 @@ namespace Ch03
         static void Main1(string[] args)
         {
             // If
-            int num1 = 1;
-            int num2 = 2;
+            int a1 = 1;
+            int a2 = 2;
 
-            if (num1 < num2)
-            { Console.WriteLine("num1은 num2보다 작다."); }
+            if (a1 < a2)
+            { Console.WriteLine("a1은 a2보다 작다."); }
+            Console.WriteLine();
 
-            if (num1 > 1)
-            { Console.WriteLine("num1은 1보다 크다."); }
+            if (a1 > 1)
+            { Console.WriteLine("a1은 a1보다 크다."); }
+            Console.WriteLine();
 
-
-            if (num1 > 0)
+            if (a1 > 0)
             {
-                if (num2 > 1)
-                { Console.WriteLine("num1은 0보다 크고, num2는 1보다 크다."); }
+                if (a2 > 1)
+                { Console.WriteLine("a1은 0보다 크고, a2는 1보다 크다."); }
 
             }
-
-
-            if (num1 > 0 && num2 > 1)
-            { Console.WriteLine("num1은 0보다 크고 그리고 num2는 1보다 크다."); }
             Console.WriteLine();
+
+            if (a1 > 0 && a2 > 1)
+            { Console.WriteLine("a1은 0보다 크고 그리고 a2는 1보다 크다."); }
+
+            Console.WriteLine();
+            Console.WriteLine("=============================");
 
 
 
             // If ~ else
-            int var1 = 1, var2 = 2;
+            int b1 = 1, b2 = 2;
 
-            if (var1 > var2)
-            { Console.WriteLine("var1은 var2보다 크다"); }
+            if (b1 > b2)
+            { Console.WriteLine("b1은 b2보다 크다"); }
             else
-            { Console.WriteLine("var1은 var2보다 작다."); }
+            { Console.WriteLine("b1은 b2보다 작다."); }
+
             Console.WriteLine();
+            Console.WriteLine("=============================");
 
 
 
@@ -66,8 +71,9 @@ namespace Ch03
             { Console.WriteLine("n3는 n4보다 크다."); }
             else
             { Console.WriteLine("n4가 가장 크다."); }
-            Console.WriteLine();
 
+            Console.WriteLine();
+            Console.WriteLine("=============================");
 
 
 

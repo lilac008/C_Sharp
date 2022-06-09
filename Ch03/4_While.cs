@@ -22,15 +22,14 @@ namespace Ch03
     {
         static void Main1(string[] args)
         {
-            // 1부터 10까지 합
-
+            // while
             int sum = 0;
-            int k = 1;
+            int a = 1;
 
-            while (k <= 10)
+            while (a <= 10)
             {
-                sum += k;
-                k++;
+                sum += a;
+                a++;
 
             }
             Console.WriteLine("1부터 10까지 합 : " + sum);
@@ -38,62 +37,55 @@ namespace Ch03
 
 
             // do ~ while : 최초 1번은 무조건 반복 실행하는 반복
-
             int total = 0;
-            int i = 1;
+            int b = 1;
 
             do
             {
-                if (i % 2 == 0)
+                if (b % 2 == 0)
                 {
-                    total += i;
+                    total += b;
                 }
-
-                i++;
-
+                b++;
             }
-            while (i <= 10);
+            while (b <= 10);
+
             Console.WriteLine("1부터 10까지 짝수합 : " + total);
             Console.WriteLine();
 
 
             // break
-
-            int num = 1;
+            int c = 1;
 
             while (true)
             {
-                if (num % 5 == 0 && num % 7 == 0)
+                if (c % 5 == 0 && c % 7 == 0)
                 {
                     break;    //반복 종료
                 }
-                num++;
-
+                c++;
             }
-
-            Console.WriteLine("5와 7의 최소공배수 : " + num);
+            Console.WriteLine("5와 7의 최소공배수 : " + c);
             Console.WriteLine();
 
 
             // continue
+            int d = 0;
+            int e = 0;
 
-            int tot = 0;
-            int j = 0;
-
-            while (j <= 10)
+            while (e <= 10)
             {
-                j++;
-                if (j % 2 == 1)
+                e++;
+                if (e % 2 == 1)
                 {
                     continue; // 반복문 처음으로 이동
 
                 }
 
-                tot += j;
+                d += e;
 
             }
-
-            Console.WriteLine("1부터 10까지 짝수합 : " + tot);
+            Console.WriteLine("1부터 10까지 짝수합 : " + d);
             Console.WriteLine();
 
 

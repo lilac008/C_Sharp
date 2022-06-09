@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 /*
  * 날짜 : 2022/06/02
  * 이름 :최희원
- * 내용 : Data Type(자료형) 실습하기 (p83)
+ * 내용 : Data Type(자료형)  (p83)
+ * 
+ * 
  * 
  * [Data Type]
  * - 변수에 저장되는 데이터의 종류와 크기를 Data Type으로 선언

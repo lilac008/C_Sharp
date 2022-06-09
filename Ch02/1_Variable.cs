@@ -9,7 +9,9 @@ using System.Threading.Tasks;
  * 
  * 날짜 : 2022/06/02 
  * 이름 : 최희원
- * 내용 : C# 변수 실습하기 (p79)
+ * 내용 : 변수와 상수 (p79)
+ * 
+ * 
  * 
  * 1. Variable (변수)
  *  - 데이터(숫자,문자)를 처리(+,- 등 연산)하기 위해 생성되는 메모리 공간
@@ -18,7 +20,6 @@ using System.Threading.Tasks;
  * 2. Constant (상수)
  *  - 데이터를 변경할 수 없는 변수
  *  - Const dataType dataname = 해당값;
- *  
  *  
  */
 

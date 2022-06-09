@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 /*
  * 날짜 : 2022/06/02
  * 이름 :최희원
- * 내용 : Operator(연산자) 실습 (p90)
+ * 내용 : Operator(연산자)  (p90)
+ *
+ *
  *
  * Operator(연산자)
  * - 변수에 저장된 데이터의 처리를 위해 Operator를 사용

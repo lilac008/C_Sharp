@@ -23,62 +23,63 @@ namespace Ch02
         static void Main1(string[] args)
         {
 
+            //변수
+            string greet = "Good Morning";
+            Console.WriteLine("greeting : " + greet);
+            Console.WriteLine();
 
-            string greeting = "Good Morning";
-            Console.WriteLine("greeting : " + greeting);
+
+            //변수.Length 길이
+            Console.WriteLine("greeting 길이 : " + greet.Length);
             Console.WriteLine();
             
 
-            //문자열 길이
-            Console.WriteLine("greeting 길이 : " + greeting.Length);
-            Console.WriteLine();
-            
-
-            //문자열 추출
-            Console.WriteLine("greeting[0] : " + greeting[0]); //숫자(index) 왼쪽부터 0,1,...
-            Console.WriteLine("greeting[3] : " + greeting[3]);
-            Console.WriteLine("greeting[5] : " + greeting[5]);
+            //변수[숫자] 추출
+            Console.WriteLine("greeting[0] : " + greet[0]);      //index(색인)은 항상 왼쪽부터 0,1,... 고정.
+            Console.WriteLine("greeting[3] : " + greet[3]);
+            Console.WriteLine("greeting[5] : " + greet[5]);
             Console.WriteLine();
 
 
-            //IndexOf (index 앞에서부터 검색)
-            Console.WriteLine("IndexOf 'G' : " + greeting.IndexOf('G')); ;
-            Console.WriteLine("IndexOf \"G\" : " + greeting.IndexOf("G")); ;
-            Console.WriteLine("IndexOf 'o' : " + greeting.IndexOf('o')); ;
-            Console.WriteLine("IndexOf \"Mor\" : " + greeting.IndexOf("Mor")); ;
-            Console.WriteLine("IndexOf \"ing\" : " + greeting.IndexOf("ing")); ;
+            //변수.IndexOf (앞에서부터 검색)
+            Console.WriteLine("IndexOf 'G' : " + greet.IndexOf('G'));
+            Console.WriteLine("IndexOf \"G\" : " + greet.IndexOf("G"));
+            Console.WriteLine("IndexOf 'o' : " + greet.IndexOf('o')); 
+            Console.WriteLine("IndexOf \"Mor\" : " + greet.IndexOf("Mor"));
+            Console.WriteLine("IndexOf \"ing\" : " + greet.IndexOf("ing"));
             Console.WriteLine();
 
 
-            //LastIndexOf (index 뒤에서부터 검색)
-            Console.WriteLine("LastIndexOf 'g' : " + greeting.LastIndexOf('G'));
-            Console.WriteLine("LastIndexOf 'o' : " + greeting.LastIndexOf('o'));
-            Console.WriteLine("LastIndexOf \"Mor\" : " + greeting.LastIndexOf("Mor"));
-            Console.WriteLine("LastIndexOf \"ing\" : " + greeting.LastIndexOf("ing"));
+            //변수.LastIndexOf (뒤에서부터 검색)
+            Console.WriteLine("LastIndexOf 'g' : " + greet.LastIndexOf('G'));
+            Console.WriteLine("LastIndexOf 'o' : " + greet.LastIndexOf('o'));
+            Console.WriteLine("LastIndexOf \"Mor\" : " + greet.LastIndexOf("Mor"));
+            Console.WriteLine("LastIndexOf \"ing\" : " + greet.LastIndexOf("ing"));
             Console.WriteLine();
 
 
-            //Substring(index,length)  *** sbusting
-            Console.WriteLine("Substring(0,4) : {0}", greeting.Substring(0, 4));  //(0에서 4열)
-            Console.WriteLine("Substring(5,7) : {0}", greeting.Substring(5, 7));  //(5에서 7열)
-            Console.WriteLine("Substring(5) : {0}", greeting.Substring(5));
+            //변수.Substring(index,length) (부분문자열) 
+            Console.WriteLine("Substring(0,4) : {0}", greet.Substring(0, 4));  //(0에서 4열)
+            Console.WriteLine("Substring(5,7) : {0}", greet.Substring(5, 7));  //(5에서 7열)
+            Console.WriteLine("Substring(5) : {0}", greet.Substring(5));
             Console.WriteLine();
 
 
-            // Replace 교체 
-            string replaced = greeting.Replace("Morning", "Afternoon");
+            // 변수.Replace (교체) 
+            string replaced = greet.Replace("Morning", "Afternoon");
             Console.WriteLine("replaced : " + replaced);
             Console.WriteLine();
 
 
-            //기본형 데이터를 문자열로 변환 p112
-            int var1 = 1;
-            double var2 = 2.12;
-            bool var3 = true;
+            //다른 데이터타입으로 변환
+            //.ToString() (기본형을 문자열로 변환) p112
+            int a1 = 1;
+            double a2 = 2.12;
+            bool a3 = true;
 
-            string str1 = var1.ToString(); //(string)으로 변환할 수 없다. var1(int형)을 ToString()으로 변환
-            string str2 = var2.ToString();
-            string str3 = "" + var3;
+            string str1 = a1.ToString();        //(string)으로 변환할 수 없다. v1(int형)을 ToString()으로 변환
+            string str2 = a2.ToString();
+            string str3 = "" + a3;
 
             Console.WriteLine("str1 : " + str1);
             Console.WriteLine("str2 : " + str2);
@@ -86,18 +87,18 @@ namespace Ch02
             Console.WriteLine();
 
 
-            //문자열 데이터를 기본형으로 변환 p115 참고
-            string s1 = "3";
-            string s2 = "3.14";
-            string s3 = "false";
+            //.Parse() (문자열을 기본형으로 변환) p115
+            string b1 = "3";
+            string b2 = "3.14";
+            string b3 = "false";
 
-            int r1 = int.Parse(s1);
-            double r2 = double.Parse(s2);
-            bool r3 = bool.Parse(s3);
+            int c1 = int.Parse(b1);
+            double c2 = double.Parse(b2);
+            bool c3 = bool.Parse(b3);
 
-            Console.WriteLine($"r1 : {r1}");
-            Console.WriteLine($"r2 : {r2}");
-            Console.WriteLine($"r3 : {r3}");
+            Console.WriteLine($"r1 : {c1}");
+            Console.WriteLine($"r2 : {c2}");
+            Console.WriteLine($"r3 : {c3}");
             Console.WriteLine();
 
 

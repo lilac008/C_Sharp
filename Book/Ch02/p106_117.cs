@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace Book.Ch02
 {
-    internal class p106
+    internal class p106_117
     {
         static void Main(string[] args)
         {
+
+
 
             //강제 자료형 변환 - 오류
             //long a = 2147483647L + 2147483647L;
@@ -93,7 +95,7 @@ namespace Book.Ch02
             Console.WriteLine(double.Parse("103.32").GetType());
             Console.WriteLine();
 
-            //예외 - 숫자로 변환 불가
+            //오류 - 숫자로 변환 불가
             //Console.WriteLine(int.Parse("52.273"));    // 실수의 자료유형이 안맞음. 
             //Console.WriteLine(int.Parse("abc"));
             Console.WriteLine("--------------------------------");
@@ -123,7 +125,7 @@ namespace Book.Ch02
             Console.WriteLine();
             Console.WriteLine("------------------------");
 
-            //숫자 덧셈, 문자열 덧셈
+            //숫자 + 문자열 덧셈
             Console.WriteLine(52 + 273);
             Console.WriteLine("52" + 273);
             Console.WriteLine(52 + "273");
@@ -131,17 +133,36 @@ namespace Book.Ch02
             Console.WriteLine();
             Console.WriteLine("------------------------");
 
-            //간단한 문자열 변환 
+            //문자열 변환 - 다른 방법 
             int n5 = 52273;
             string o5 = n5 + "";
             Console.WriteLine(o5);
+            Console.WriteLine();
 
             //문자열 변환 오류의 예
             //char n6 = 'a';        
             //string o6 = n6 + "";
             //Console.WriteLine();
 
-            //bool.Parse()
+
+            //bool.Parse()로 문자열 변환
+            Console.WriteLine(bool.Parse("True"));
+            Console.WriteLine(bool.Parse("true"));
+            Console.WriteLine(bool.Parse("False"));
+            Console.WriteLine(bool.Parse("false"));
+            Console.WriteLine();
+
+            //int(-2147483648 ~ 0 ~ 2147483647) 최솟값의 음수
+            int n7 = int.MinValue;
+            Console.WriteLine(-n7); //int 최솟값에는 대응되는 양수가 없어 음수를 집어넣어도 그대로 출력된다.
+            //Console.WriteLine(-(-2147483648));  위는 오류가 없지만, 이렇게 하면 오류가 발생
+
+
+
+
+
+
+
 
 
 

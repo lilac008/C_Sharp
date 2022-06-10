@@ -7,9 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Ch04\" />
-    <Folder Include="Ch03\" />
-  </ItemGroup>
-
 </Project>

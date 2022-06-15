@@ -43,6 +43,7 @@ namespace Ch02
             Console.WriteLine("r3 : " + r3);
             Console.WriteLine("r4 : " + r4);
             Console.WriteLine("r5 : " + r5);
+            Console.WriteLine();
 
 
             // 증가, 감소 Operator
@@ -51,14 +52,14 @@ namespace Ch02
             num++;
             ++num;
 
-            Console.WriteLine("=======================");
             Console.WriteLine($"num : {num}"); //string 문자열 보간 출력
+            Console.WriteLine();
 
             num--;
             --num;
 
-            Console.WriteLine("=======================");
             Console.WriteLine($"num : {num}");
+            Console.WriteLine();
 
 
             // 복합대입 Operator
@@ -69,11 +70,11 @@ namespace Ch02
             n3 *= 3;           // n3 = n3 * 3      
             n4 /= 4;           // n4 = n4 / 4     
 
-            Console.WriteLine("=======================");
             Console.WriteLine($"n1 : {n1}");
             Console.WriteLine($"n2 : {n2}");
             Console.WriteLine($"n3 : {n3}");
             Console.WriteLine($"n4 : {n4}");
+            Console.WriteLine();
 
 
             // 비교 Operator
@@ -87,13 +88,13 @@ namespace Ch02
             bool rs5 = cp1 == cp2;         // var1이 var2과 서로 같다
             bool rs6 = cp1 != cp2;         // var1이 var2과 서로 다르다
 
-            Console.WriteLine("=======================");
             Console.WriteLine("rs1 : " + rs1);
             Console.WriteLine("rs2 : " + rs2);
             Console.WriteLine("rs3 : " + rs3);
             Console.WriteLine("rs4 : " + rs4);
             Console.WriteLine("rs5 : " + rs5);
             Console.WriteLine("rs6 : " + rs6);
+            Console.WriteLine();
 
 
             // 논리 Operator
@@ -106,12 +107,12 @@ namespace Ch02
             bool res4 = cpp1 > 0 || cpp2 > 2;    // cpp1이 0보다 크고 또는 cpp2는 2보다 크다.
             bool res5 = !(cpp1 > cpp2);          // cpp1이 cpp2보다 크지 않다.
 
-            Console.WriteLine("=======================");
             Console.WriteLine($"res1 : {res1}");
             Console.WriteLine($"res2 : {res2}");
             Console.WriteLine($"res3 : {res3}");
             Console.WriteLine($"res4 : {res4}");
             Console.WriteLine($"res5 : {res5}");
+            Console.WriteLine();
 
 
             // 조건 Operator
@@ -119,8 +120,8 @@ namespace Ch02
 
             string result = (a > 1) ? "a는 1보다 크다" : "a는 1보다 크지 않다.";   //참이면 전자, 거짓이면 후자 출력
             
-            Console.WriteLine("=======================");
             Console.WriteLine("result : " + result);
+            Console.WriteLine();
 
 
 

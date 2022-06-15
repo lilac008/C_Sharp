@@ -38,18 +38,18 @@ namespace Ch02
             int num2 = 2;            // 선언과 초기화
             int num3 = num1 + num2; 
 
-            Console.WriteLine("num3 : " + num3);      //결과
+            Console.WriteLine("num3 : " + num3);      
 
 
 
             // Constant (상수)
-            const double P = 3.141592;
-            const int N = 10;
+            const double p = 3.141592;
+            const int n = 10;
             //num = 20;<-- 상수는 값 변경X
             //num = 30;
 
-            Console.WriteLine("NUM : " + N);           //결과 
-            Console.WriteLine("PI : " + P);            //결과
+            Console.WriteLine("NUM : " + n);           
+            Console.WriteLine("PI : " + p);            
 
 
 

@@ -36,72 +36,76 @@ namespace Ch02
         static void Main1(string[] args)
         {
             // Integer Type (정수형)
-            sbyte integer1 = 127;            //1byte, 부호 있는 정수, -128 - 127
-            byte integer2 = 255;            //1byte, 부호 없는 정수, 0 - 255
-            short integer3 = 32767;          //2byte, 부호 없는 정수, -32,766 - 32,767
-            int integer4 = 2147483647;     //4byte, 부호 없는 정수, -2,147,483,648 - 2,127,483,647
-            long integer5 = 2147483648L;    //8byte, 부호 없는 정수, 교재참고
+            sbyte i1 = 127;            //1byte, 부호 있는 정수, -128 - 127
+            byte i2 = 255;            //1byte, 부호 없는 정수, 0 - 255
+            short i3 = 32767;          //2byte, 부호 없는 정수, -32,766 - 32,767
+            int i4 = 2147483647;     //4byte, 부호 없는 정수, -2,147,483,648 - 2,127,483,647
+            long i5 = 2147483648L;    //8byte, 부호 없는 정수, 교재참고
 
-            Console.WriteLine("integer1 : {0}", integer1);
-            Console.WriteLine("integer2 : {0}", integer2);
-            Console.WriteLine("integer3 : {0}", integer3);
-            Console.WriteLine("integer4 : {0}", integer4);
-            Console.WriteLine("integer5 : {0}", integer5);
+            Console.WriteLine("integer1 : {0}", i1);
+            Console.WriteLine("integer2 : {0}", i2);
+            Console.WriteLine("integer3 : {0}", i3);
+            Console.WriteLine("integer4 : {0}", i4);
+            Console.WriteLine("integer5 : {0}", i5);
+            Console.WriteLine();
+
 
             // Real Number Type (실수형)
-            float realNum1 = 1.123456789f;
-            double realNum2 = 1.12345678901234567890;
+            float r1 = 1.123456789f;
+            double r2 = 1.12345678901234567890;
 
-            Console.WriteLine("=======================");
-            Console.WriteLine("realNum1 : " + realNum1);
-            Console.WriteLine("realNum2 : " + realNum2);
+            Console.WriteLine("realNum1 : " + r1);
+            Console.WriteLine("realNum2 : " + r2);
+            Console.WriteLine();
+
 
             // Logical Type (논리형)
             bool b1 = true;
             bool b2 = false;
 
-            Console.WriteLine("=======================");
             Console.WriteLine("b1 : " + b1);
             Console.WriteLine("b2 : " + b2);
+            Console.WriteLine();
 
 
             // Character Type (문자형)
             char c1 = 'A';
             char c2 = '가';
 
-            Console.WriteLine("=======================");
             Console.WriteLine("c1 : " + c1);
             Console.WriteLine("c2 : " + c2);
+            Console.WriteLine();
 
 
             // String Type (문자열)
-            string str1 = "A";
-            string str2 = "가";
-            string str3 = "Apple";
-            string str4 = "안녕하세요";
-            string str5 = "10";
+            string s1 = "A";
+            string s2 = "가";
+            string s3 = "Apple";
+            string s4 = "안녕하세요";
+            string s5 = "10";
 
-            Console.WriteLine("=======================");
-            Console.WriteLine("str1 : " + str1);
-            Console.WriteLine("str2 : " + str2);
-            Console.WriteLine("str3 : " + str3);
-            Console.WriteLine("str4 : " + str4);
-            Console.WriteLine("str5 : " + str5);
+            Console.WriteLine("str1 : " + s1);
+            Console.WriteLine("str2 : " + s2);
+            Console.WriteLine("str3 : " + s3);
+            Console.WriteLine("str4 : " + s4);
+            Console.WriteLine("str5 : " + s5);
+            Console.WriteLine();
 
 
             // Object Type (명시적인 타입의 선언 없이도 변수를 선언하는 것이 가능)
-            object obj1 = 11;
-            object obj2 = 3.141592;
-            object obj3 = true;
-            object obj4 = 'A';
-            object obj5 = "Apple";
+            object o1 = 11;
+            object o2 = 3.141592;
+            object o3 = true;
+            object o4 = 'A';
+            object o5 = "Apple";
 
-            Console.WriteLine("=======================");
-            Console.WriteLine("obj1 : " + obj1);
-            Console.WriteLine("obj2 : " + obj2);
-            Console.WriteLine("obj3 : " + obj3);
-            Console.WriteLine("obj4 : " + obj4);
-            Console.WriteLine("obj5 : " + obj5);
+            Console.WriteLine("obj1 : " + o1);
+            Console.WriteLine("obj2 : " + o2);
+            Console.WriteLine("obj3 : " + o3);
+            Console.WriteLine("obj4 : " + o4);
+            Console.WriteLine("obj5 : " + o5);
+            Console.WriteLine();
+
 
             // Var Type (명시적인 타입의 선언 없이도 변수를 선언하는 것이 가능)  
             var v1 = 11;
@@ -110,13 +114,12 @@ namespace Ch02
             var v4 = 'A';
             var v5 = "Apple";
 
-            Console.WriteLine("=======================");
             Console.WriteLine("v1 : " + v1);
             Console.WriteLine("v2 : " + v2);
             Console.WriteLine("v3 : " + v3);
             Console.WriteLine("v4 : " + v4);
             Console.WriteLine("v5 : " + v5);
-
+            Console.WriteLine();
 
         }
 

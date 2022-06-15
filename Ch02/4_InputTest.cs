@@ -21,18 +21,19 @@ namespace Ch02
         static void Main1(string[] args)
         {
 
-            //이름 입력
+            //이름 
             Console.WriteLine("이름 : ");
             string name = Console.ReadLine();
             Console.WriteLine("=======================");
 
-            //나이 입력
+
+            //나이 
             Console.WriteLine("나이 : ");
             string age = Console.ReadLine();
             Console.WriteLine("=======================");
 
 
-            //주소 입력
+            //주소 
             Console.WriteLine("주소 : ");
             string addr = Console.ReadLine();
             Console.WriteLine("=======================");

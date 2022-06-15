@@ -31,8 +31,8 @@ namespace Ch02
 
             //큰변수에서 작은 변수(overflow)
             int    var1 = 256;
-            short  var2 = (short) var1;       // 강제 (short)
-            byte   var3 = (byte) var2;        // 강제 (byte)
+            short  var2 = (short) var1;       /// 강제 (short)
+            byte   var3 = (byte) var2;        /// 강제 (byte)
 
             Console.WriteLine($"var1 : {var1}");
             Console.WriteLine($"var2 : {var2}");
@@ -58,7 +58,7 @@ namespace Ch02
             double n2 = 2.15;
             double n3 = 11.123;
 
-            int rs1 = (int)n1;        //double(8byte)에서 int(4byte) 강제
+            int rs1 = (int)n1;        ///double(8byte)에서 int(4byte) 강제
             int rs2 = (int)n2;
             int rs3 = (int)n3;
 

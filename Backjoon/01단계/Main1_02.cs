@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Backjoon._01단계
 {
-    internal class Main1_01
+    internal class Main1_02
     {
         static void Main1(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
-
-
+            Console.WriteLine("강한친구 대한육군");
+            Console.WriteLine("강한친구 대한육군");
 
         }
     }

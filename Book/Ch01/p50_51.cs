@@ -19,6 +19,7 @@ namespace Book.Ch01
             Console.WriteLine();
             Console.WriteLine();
 
+
             //WriteLine()   - 줄바꿔서 출력
             Console.WriteLine("WriteLine");
             Console.WriteLine("WriteLine");
@@ -27,6 +28,7 @@ namespace Book.Ch01
             Console.WriteLine("WriteLine");
             Console.WriteLine();
             Console.WriteLine();
+
 
             //Write()와 WriteLine() 
             Console.Write("Write");

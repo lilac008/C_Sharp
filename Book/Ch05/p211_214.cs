@@ -38,7 +38,7 @@ namespace Book.Ch05
 
 
 
-            // List - 생성과 동시에 요소 추가
+            // List - 생성 및 요소 추가
             List<int> l3 = new List<int>() { 52, 273, 32, 64 };
 
             foreach (var item in l3)

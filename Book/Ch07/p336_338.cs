@@ -13,8 +13,6 @@ using System.Threading.Tasks;
 
 namespace Book.Ch07
 {
-
-
     class Animal
     {
         public int Age { get; set; }
@@ -30,20 +28,15 @@ namespace Book.Ch07
         public void Bark()
         {
             Console.WriteLine("왈왈");
+
+            ///base.                                ///p338 2)(이름이 겹치거나 하이딩 등의 경우) [this. : 자식 클래스, base. : 모 클래스]로 구분.
         }
 
         public void Test()
         {
-            Eat();
+            Eat();                                  ///p338 1) Animal에서 상속받은 Eat(),Sleep() method 호출
             Sleep();
         }
-
-        ///Dog d1 = new Dog();
-        ///dog.         
-
-
-        ///this. - 자식 클래스
-        ///base. - 모 클래스
 
     }
 
@@ -52,20 +45,14 @@ namespace Book.Ch07
         public void Meow() { Console.WriteLine("냥냥"); }
     }
 
-
-
-
-    internal class p336_337
+    internal class p336_338
     {
-
-
-
-
-
-
-
-
-
-
+        static void Main1(string[] args)
+        {
+            Dog d1 = new Dog();
+            ///d1.                 ///자신, 부모 멤버 모두 접근 가능
+        }
     }
+
+
 }

@@ -44,10 +44,6 @@ namespace Book.Ch05
 
 
             Console.WriteLine(Math.Abs(-10));
-
-
-
-
         }
     }
 

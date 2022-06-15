@@ -55,8 +55,7 @@ namespace Ch03
             Console.WriteLine();
 
 
-            // For 중첩 (반복 중첩, thread라고 함)
-
+            // 중첩 (반복 중첩, thread라고 함)
             for (int aa = 1; aa <= 3; aa++)
             {
                 Console.WriteLine("A : " + aa);
@@ -74,8 +73,7 @@ namespace Ch03
             Console.WriteLine();
 
 
-            //구구단
-
+            //for - 구구단
             for (int e = 1; e <= 9; e++)
             {
                 Console.WriteLine("{0}단 시작", e);

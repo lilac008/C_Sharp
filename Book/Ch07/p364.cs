@@ -12,17 +12,17 @@ namespace Book.Ch07
     {
         class Animal
         {
-            public void sameEat() { Console.WriteLine("냠냠 먹습니다"); }
+            public void sameEat() { Console.WriteLine("냠냠 먹습니다"); }             ///같은 이름 -> hiding당하면 모의 method만 출력하게 된다. 
         }
 
         class Dog : Animal
         {
-            public void sameEat() { Console.WriteLine("강아지 사료를 먹습니다"); }
+            public void sameEat() { Console.WriteLine("강아지 사료를 먹습니다"); }    ///같은 이름
         }
 
         class Cat : Animal
         {
-            public void sameEat() { Console.WriteLine("고양이 사료를 먹습니다"); }
+            public void sameEat() { Console.WriteLine("고양이 사료를 먹습니다"); }    ///같은 이름
         }
 
 

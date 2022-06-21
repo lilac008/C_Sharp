@@ -7,12 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Sub3\" />
-    <Folder Include="Sub4\" />
-    <Folder Include="Sub6\" />
-    <Folder Include="Sub2\" />
-    <Folder Include="Sub1\" />
-  </ItemGroup>
-
 </Project>

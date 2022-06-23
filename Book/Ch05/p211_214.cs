@@ -4,35 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+///     class name  -   dataType        -      new dataType[저장공간] 
+///     List           <dataType>       -      new dataType[저장공간]
+///   
+
+
+
+
+
 namespace Book.Ch05
 {
     internal class p211_214
     {
         static void Main1(string[] args)
         {
+            /// Array
+            int[] arr1 = new int[10];                   ///배열(10개의 저장공간) 생성  
+            long[] arr2 = new long[10];
+            string[] arr3 = new string[10];
 
-            // 배열 생성 
-            int[] iArr = new int[10];                   //배열 생성 - 10개의 저장공간 가짐
-            long[] lArr = new long[10];
-            string[] sArr = new string[10];
 
-
-            ///List<int> l1 = new List<int>();
+            /// List class 
+            List<int> l1 = new List<int>();
             ///list.
 
 
-            // List - 생성
-            List<int> l2 = new List<int>();       //변수 선언
+            /// List
+            List<int> l1 = new List<int>();       ///list class 변수 선언
 
-            l2.Add(52);                           //list에 요소 추가
-            l2.Add(273);
-            l2.Add(32);
-            l2.Add(64);
+            l1.Add(10);                           ///list class에 요소 추가
+            l1.Add(20);
+            l1.Add(30);
+            l1.Add(40);
 
-            foreach (var item in l2)             //반복 수행
+            foreach (var item in l1)             ///반복
             {
-                Console.WriteLine("Count : " + l2.Count + "\t item : " + item);
+                Console.WriteLine("Count : " + l1.Count + "\t item : " + item);     ///결과 : count : 4 , itme : 10, 20, 30, 40    
             }
+
 
             Console.WriteLine();
 

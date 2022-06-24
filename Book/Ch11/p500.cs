@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 ///    무명 Delegate : 정렬할 때마다 정렬의 종류만큼 method를 만들기 힘들어서 이러한 코드를 간단하게 하고자 사용
 ///    
-///                    delegate(<매개변수>, <매개변수>)
-///                    {
-///                        return 반환 ;
-///                    }
+/// 
+///       변수.Sort(delegate(매개변수, 매개변수){
+///                return /반환/ ;
+///        });
 /// 
 
 
@@ -34,11 +34,10 @@ namespace Book.Ch11
                 new Product(){ Name = "청포도", Price = 500 }
             };
 
-            p.Sort(
-             delegate (Product a, Product b)                                ///무명 delegate로 정렬 방법을 정의.
-             {
-                 return a.Price.CompareTo(b.Price);
-             }
+            p.Sort( delegate (Product a, Product b)                                ///무명 delegate로 정렬 방법을 정의.
+                    {
+                       return a.Price.CompareTo(b.Price);
+                    }
             );
 
 
@@ -48,6 +47,10 @@ namespace Book.Ch11
             }
 
         }
+
+
+
+
 
 
 

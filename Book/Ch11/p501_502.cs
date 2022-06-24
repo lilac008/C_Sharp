@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-///    Lamda : delegate를 조금 더 짧게 사용하는 것
-///    
-///    (<매개변수>,<매개변수>) => 
-///    {
-///            --code--
-///            return 반환;
-///    }
-///
-///    (method 내부 딱히 입력할 코드가 없다면) (a,b)  =>  --반환--
 
+
+///    Lamda : delegate를 조금 더 짧게 사용하는 것
+///     
+//       (매개변수,매개변수) => {
+//           return /반환/ ;
+//       }
+///
+///     (Sort() method 내부 딱히 입력할 코드가 없을 경우)
+//        variable.Sort( (a,b)  =>  return  /반환/ )
+//        variable.Sort( (a,b)  =>    /반환/       )
 
 
 namespace Book.Ch11
@@ -38,12 +39,16 @@ namespace Book.Ch11
             };
 
             p.Sort((a, b) => { return a.Price.CompareTo(b.Price); });      ///lamda
-            p.Sort((a, b) => a.Price.CompareTo(b.Price));                  ///lamda의 더 간단한 형태
+            p.Sort((a, b) => a.Price.CompareTo(b.Price));                  ///lamda  더 간단한 형태
 
             foreach (var item in p)
             {
-                Console.WriteLine(item.Name + " : " + item.Price);            /// Price가격이 자동정렬된 형태로 출력
+                Console.WriteLine(item.Name + " : " + item.Price);            
             }
+
+
+
+
 
         }
 

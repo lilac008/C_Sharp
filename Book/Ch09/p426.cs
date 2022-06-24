@@ -35,7 +35,7 @@ namespace Book.Ch09
                 new Product(){ Name = "우엉", Price = 3000 },
                 new Product(){ Name = "연근", Price = 4000 },
             };
-            ///li.Sort();           /// 오류 : sort() method가 Product class를 어떤 기준으로 정렬해야할지 모르기 때문
+            /// li.Sort();              /// 오류 : sort() method가 Product class를 어떤 기준으로 정렬해야할지 모르기 때문
 
             foreach (var item in li) 
             {

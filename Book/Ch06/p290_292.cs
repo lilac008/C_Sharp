@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-///    Constant(상수) : 상수로 선언된 변수는 값을 변경할 수 없음 
+///    Constant (상수) : 상수로 선언된 변수는 값을 변경할 수 없음 
 
 
 namespace Book.Ch06

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-///   Interface : 특정한 class를 만들때 사용하는 규칙   
-///               1. interface class는 I가 붙는 것이 규칙
-///               2. CompareTo() method를 구현해야 한다.
-///              ex) sort() method를 구현한 객체만 넣어달라고 했는데 아닐시, 실수를 방지하고자 interface라는 기능을 제공 
+///   Interface Class : 특정한 class를 만들때 사용하는 규칙, I가 붙는다.
+///                     ex) sort() method를 구현한 객체만 넣어달라고 했는데 아닐시, 실수를 방지하고자 interface라는 기능을 제공 
+///                     - CompareTo() method를 구현해야 한다.
 
 
 

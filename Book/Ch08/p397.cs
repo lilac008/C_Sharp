@@ -5,13 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-/// 두 개 이상의 Generic <T,U>
-/// 
+///  Generic <T, U> 
+///     where T : class
+///     where U : struct
+///  
+///     where T :IComparable
+///     where U :IComparable/IDisposable
 
-/// new - 객체 생성용 new    / 이름 재사용 new      - p ???????
 /// where - 모든 자료형을 허용하면 안 되는 경우 where을 사용해서 Generic을 제한 
-///       - 용도 3가지
-///       
+///       - 용도 3가지 (new - 객체 생성용 new    / 하이딩 new)처럼 where도 사용 용도가 다른 경우가 있으니 주의.  
 
 
 

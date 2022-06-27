@@ -5,8 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-///     Generic : class 내부 자료형에 별칭을 지정하는 기능.  식별자 T를 사용.
-///             : class 내부 변수의 타입을 동적으로 일반화시키는 문법.
+///     Generic (내부 변수를 일반화) : class 내부 자료형에 별칭(<T>, 식별자 T를 사용)을 지정. 내부 변수의 타입을 동적으로 일반화시키는 문법.
 
 
 namespace Book.Ch08
@@ -27,13 +26,13 @@ namespace Book.Ch08
         {
             static void Main1(string[] args)
             {
-                Wanted<string> wString = new Wanted<string>("String");
-                Wanted<int> wint = new Wanted<int>(52273);
-                Wanted<double> wdouble = new Wanted<double>(52.273);
+                Wanted<string> w1  = new Wanted<string> ("String");
+                Wanted<int>    w2  = new Wanted<int>    (52273);
+                Wanted<double> w3  = new Wanted<double> (52.273);
 
-                Console.WriteLine(wString.Value);
-                Console.WriteLine(wint.Value);
-                Console.WriteLine(wdouble.Value);
+                Console.WriteLine(w1.Value);
+                Console.WriteLine(w2.Value);
+                Console.WriteLine(w3.Value);
 
 
 

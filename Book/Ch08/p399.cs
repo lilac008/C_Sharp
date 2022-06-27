@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/// Array - array[i]
-/// List - list[i]
-/// indexer - dataType this[dataType variable]
 
+///     Array    :  / array[i]  배열
+///     List     :  /  list[i]   
+///     
+///     Indexer  : Class에 index사용 / this[DataType Variable]
 
-/// indexer - class에 숫자 주입     /  dataType this[dataType variable]
-/// 
 
 namespace Book.Ch08
 {
@@ -19,17 +18,20 @@ namespace Book.Ch08
     {
         class SquareCalculator
         {
-            public int this[int i] { get { return i * i; } }
+            public int this[int i] 
+            { 
+                get { return i * i; } 
+            }
         }
 
         class Program
         {
             static void Main1(string[] args)
             {
-                SquareCalculator squar = new SquareCalculator();
-                Console.WriteLine(squar[10]);                      ///[]에는 int자료형으로 넣는다.
-                Console.WriteLine(squar[20]);
-                Console.WriteLine(squar[30]);
+                SquareCalculator a = new SquareCalculator();
+                Console.WriteLine(a[10]);                      
+                Console.WriteLine(a[20]);
+                Console.WriteLine(a[30]);
             }
         }
 

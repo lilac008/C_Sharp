@@ -200,7 +200,6 @@
             this.lbUid.Size = new System.Drawing.Size(42, 15);
             this.lbUid.TabIndex = 12;
             this.lbUid.Text = "결과 : ";
-
             // 
             // lbName
             // 
@@ -245,7 +244,6 @@
             this.txtUid.Name = "txtUid";
             this.txtUid.Size = new System.Drawing.Size(100, 23);
             this.txtUid.TabIndex = 17;
-
             // 
             // txtName
             // 
@@ -274,7 +272,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 278);
+            this.label7.Location = new System.Drawing.Point(18, 278);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(175, 15);
             this.label7.TabIndex = 21;
@@ -456,7 +454,6 @@
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "성별을 고르세요";
-
             // 
             // lbResultGender
             // 

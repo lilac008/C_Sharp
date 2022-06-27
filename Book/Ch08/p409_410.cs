@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-/// 구조체의 초기화 형태
+/// Struct의 초기화 형태
 
 
 
@@ -14,27 +14,36 @@ namespace Book.Ch08
 
     class Ch08_10
     {
-        struct Point
+        struct ClassA
         {
             public int x;
             public int y;
             public string testA;
             public string testB;
+            public Ch08_10 program;
 
-            public Point(int x, int y)                             ///생성자 overloading
+
+            public ClassA(int x, int y)                             ///생성자 overloading
             {
                 this.x = x;
                 this.y = y;
+
                 this.testA = "초기화";
                 this.testB = "초기화";
+
+                this.program = null;                                 /// null로 초기화
+
             }
 
-            public Point(int x, int y, string test)                ///생성자 overloading
+            public ClassA(int x, int y, string test)                ///생성자 overloading
             {
                 this.x = x;
                 this.y = y;
+
                 this.testA = test;
                 this.testB = test;
+
+                this.program = null;
             }
         }
 
@@ -44,7 +53,7 @@ namespace Book.Ch08
         }
     }
 
-    internal class p409
+    internal class p409_410
     {
     }
 }

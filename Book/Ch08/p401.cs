@@ -5,13 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-///     out : method 호출해서 return할 때 하나의 값이 아닌 여러 개의 값을 반환
+///     out : method 호출시 return할 때 하나의 값이 아닌 여러 개의 값을 반환
 
-
-///     dT.TryParse(dT 매개변수, out  dT 매개변수); - public static bool TryParse (stirng s, out int result);
-///                                                  true :  숫자로 바꿀 수 있는 문자열     
+///     public static bool TryParse (stirng s, out int result);
+///      dT .TryParse(dT 매개변수, out  dT 매개변수); true :  숫자로 바꿀 수 있는 문자열     
 ///                                                  flase :               없는
-  
+
 
 
 

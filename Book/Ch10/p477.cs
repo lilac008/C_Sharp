@@ -4,6 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// Exception Object :  1) FormatException
+///                     2) IndexOutOfRangeException
+///                     3) CustomException
+
+/// try {}
+/// catch (FormatException e) {}  
+/// catch (IndexOutOfRangeException e) {}  
+
+
 namespace Book.Ch10
 {
     internal class p477
@@ -11,39 +20,31 @@ namespace Book.Ch10
         static void Main1(string[] args)
         {
 
-            /// Exception Situaltion
+            /// 배열 범위를 벗어난 예외 발생
             Console.Write("입력 : ");
-            string i = Console.ReadLine();
+            string a = Console.ReadLine();
             int[] arr = { 1, 2, 3, 4 };
 
-            int index = int.Parse(i);
+            int i = int.Parse(a);
 
             Console.WriteLine();
-            Console.WriteLine("입력 숫자 : " + index);
-            Console.WriteLine("배열 요소 : " + arr[index]);
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("입력 숫자 : " + i);
+            Console.WriteLine("배열 요소 : " + arr[i]);
             Console.WriteLine();
 
 
-            /// try {}
-            /// catch(예외1) {} 
-            /// catch(예외2) {}
-            ///
+            /// try, catch, catch 
             Console.Write("입력 : ");
-
             try
             {
-                string i1 = Console.ReadLine();
+                string a1 = Console.ReadLine();
                 int[] arr1 = { 1, 2, 3, 4 };
 
-                int index1 = int.Parse(i1);
+                int i1 = int.Parse(a1);
 
                 Console.WriteLine();
-                Console.WriteLine("입력 숫자 : " + index1);
-                Console.WriteLine("배열 요소 : " + arr1[index1]);
-                Console.WriteLine();
-                Console.WriteLine();
+                Console.WriteLine("입력 숫자 : " + i1);
+                Console.WriteLine("배열 요소 : " + arr1[i1]);
                 Console.WriteLine();
             }
             catch (FormatException e)
@@ -58,9 +59,9 @@ namespace Book.Ch10
             }
 
 
-            /// 오류 조심
-            /// try {}
-            /// catch(var exception) {}   - var 키워드 입력시 오류 발생
+           /// 주의 : 
+           /// catch(var exception) {}   - catch구문에는 var 입력 X
+           
 
 
         }

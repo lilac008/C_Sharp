@@ -4,11 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// Exception Object :  1) FormatException
+///                     2) IndexOutOfRangeException
+///                     3) CustomException
+
 namespace Book.Ch10
 {
     class CustomException : Exception
     {
-        public CustomException(string message) : base(message)
+        public CustomException(string message) : base(message)       /// base - 부모생성자 호출
         {
         }
     }
@@ -19,13 +23,9 @@ namespace Book.Ch10
         {
 
             try
-            {
-                throw new CustomException("사용자 정의 예외");
-            }
-            catch (CustomException exception)
-            {
-                Console.WriteLine(exception.Message);
-            }
+            {  throw new CustomException("사용자정의 예외");  }
+            catch (CustomException e)
+            {  Console.WriteLine(e.Message);  }
 
 
 

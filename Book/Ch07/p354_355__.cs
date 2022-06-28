@@ -10,13 +10,13 @@ namespace Book.Ch07
     {
         class Parent
         {
-            public static int var = 0;                                ///class variable 선언
-            public void CountParent() { Parent.var++; }               /// Parent Class - variable 증가
+            public static int v = 0;                                /// static, class variable
+            public void CountParent() { Parent.v++; }               
         }
 
         class Child : Parent
         {
-            public void CountChild() { Child.var++; }                 /// Child Class - variable 증가
+            public void CountChild() { Child.v++; }
         }
 
 
@@ -24,15 +24,16 @@ namespace Book.Ch07
         {
             static void Main1(string[] args)
             {
-                Parent p1 = new Parent();
-                Child c1 = new Child();
+                Parent a1 = new Parent();
+                Child b1 = new Child();
 
-                p1.CountParent();
-                c1.CountChild();
+                a1.CountParent();
+                b1.CountChild();
 
-                Console.WriteLine(Parent.var);
-                Console.WriteLine(Child.var);
-                Console.WriteLine(Child.var);
+                Console.WriteLine(Parent.v);
+                Console.WriteLine(Child.v);
+                Console.WriteLine(Child.v);
+
 
             }
         }

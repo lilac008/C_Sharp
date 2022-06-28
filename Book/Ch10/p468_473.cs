@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-/// Exception Handling
+/// Exception Handling 
+/// Compile-time Error (컴파일시점 오류)
+/// Systax Error (문법오류)
 
 
 namespace Book.Ch10
@@ -16,50 +18,41 @@ namespace Book.Ch10
         {
 
 
-            /// Exception - 1) 인덱스 범위 초과
-            string[] arr = { "가(0)", "나(1)" };
-            Console.Write("숫자를 입력해주세요 : ");
+            /// 기본 예외처리 - if, else
+            string[] arr = { "가[0]", "나[1]" };
+            Console.Write("숫자를 입력 : ");
             int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("입력한 위치의 값은'" + arr[a] + "'입니다");
 
-
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-
-
-
-            /// Exception Handling - Basic
-            string[] arr0 = { "가", "나" };
-            Console.Write("숫자를 입력해주세요 : ");
-            int a0 = int.Parse(Console.ReadLine());
-
-            if (a0 < arr0.Length)
-            { Console.WriteLine("입력한 위치의 값은'" + arr0[a0] + "'입니다"); }
-            else { Console.WriteLine("인덱스 범위를 넘어섰습니다"); }
-
+            if (a < arr.Length)
+            { Console.WriteLine("입력한 위치의 값은'" + arr[a] + "'입니다"); }
+            else { Console.WriteLine("::index 범위 초과::"); }
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine();
 
 
-
-            /// try, catch, finally
+            /// 고급 예외처리 - try, catch, finally
             ///
-            ///   try     : 예외상황
+            ///   try     : 예외 상황
             ///   catch   : 처리
-            ///   finally : 예외상황 여부와 상관없이 무조건 실행
+            ///   finally : 무조건 실행
             /// 
-            ///   try     : 
-            ///   catch   :
+            ///   try     : 예외 상황
+            ///   catch   : 처리
             ///   
-            ///   try     : 예외상황이 발생해도 그냥 넘어간다.
-            ///   finally : 예외상황 여부와 상관없이 무조건 실행
-            ///
+            ///   try     : 예외 발생 (그냥 넘어간다)
+            ///   finally : 무조건 실행
 
 
-            /// Exception Handling - try, catch
+
+            ///공통
+            Console.Write("입력 : ");
+            string a0 = Console.ReadLine();
+            int index = int.Parse(a0);
+            Console.WriteLine("입력숫자 : " + index);
+
+
+            /// Finally 사용하지 않음
             Console.Write("입력 : ");
             string a1 = Console.ReadLine();
 
@@ -72,17 +65,16 @@ namespace Book.Ch10
             {
                 Console.WriteLine("예외 발생");
                 Console.WriteLine(e1.GetType());
-                return;                                      ///return - 종료 키워드
+                return;                                          /// 구문에서 벗어남                                      
             }
-            Console.WriteLine("프로그램 종료");
+            Console.WriteLine("::프로그램 종료::");              ///출력되지 않는다.
 
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
 
 
-
-            /// Exception Handling - try, catch, finally
+            /// Finally 사용
             Console.Write("입력 : ");
             string a2 = Console.ReadLine();
 
@@ -95,11 +87,11 @@ namespace Book.Ch10
             {
                 Console.WriteLine("예외 발생");
                 Console.WriteLine(e2.GetType());
-                return;                                      ///return - 종료 키워드
+                return;                                      
             }
             finally
             {
-                Console.WriteLine("프로그램 종료");
+                Console.WriteLine("::프로그램 종료::");
             }
 
         }

@@ -5,9 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-///     Array    :  / array[i]  배열
-///     List     :  /  list[i]   
-///     
+///     Array    :                   / array[i]  배열
+///     List     :                   /  list[i]   
 ///     Indexer  : Class에 index사용 / this[DataType Variable]
 
 

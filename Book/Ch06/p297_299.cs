@@ -4,11 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-///     속성 : get, set을 속성으로 변환하여 쉽게 만듬
+///     속성 : get, set을 속성으로 변환하여 쉽게 만듬 (대문자가 규칙)
 ///    
+///   public dT 속성명(*)              -  * 반드시 대문자
+///   {
 ///      get { return variable; }
 ///      set { variable = value; }
-///      
+///    }
+///    
 ///      instance명.속성명          //get 호출
 ///      instance명.속성명 = 값     //set 호출
 ///      
@@ -30,8 +33,8 @@ namespace Book.Ch06
     {
         class Box
         {
-            private int width;                                         /// variable
-            public int Width                                           /// 속성 - 대문자
+            private int width;                                         
+            public int W                                           /// 속성(Capital letter)
             {
                 get { return width; }
                 set
@@ -42,7 +45,7 @@ namespace Book.Ch06
             }
 
             private int height;
-            public int Height                                          
+            public int H                                          /// 속성(Capital letter)                            
             {
                 get { return height; }
                 set
@@ -54,8 +57,8 @@ namespace Book.Ch06
 
             public Box(int width, int height)                              /// Constructor
             {
-                Width = width;
-                Height = height;
+                W = width;
+                H = height;
             }
 
             public int Area() { return this.width * this.height; }         // instance method
@@ -66,8 +69,8 @@ namespace Book.Ch06
             Box b = new Box(-10, -20);
             /// b.                                       // 속성을 의미 : 엔지니어 모양  - Width, Height(둘다 대문자)  
 
-            b.Width = -200;
-            b.Height = -100;
+            b.W = -200;
+            b.H = -100;
         }
 
 

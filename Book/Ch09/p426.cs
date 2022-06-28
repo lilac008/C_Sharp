@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-///  Interface             : 특정한 class를 만들때 사용하는 규칙, I가 붙는다.
+///  Interface             : 특정한 class를 만들때 사용하는 규칙 (대문자 I가 붙는다.)
 ///  IComparable Interface : 비교 가능한 자료
 ///  IDisposable Interface
 

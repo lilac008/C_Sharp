@@ -15,8 +15,8 @@ namespace Book.Ch08
 
         class Wanted<T>                 ///Generic을 지정할 때는 식별자 T를 사용
         {
-            public T Value;
-            public Wanted(T value)
+            public T Value;                                /// 변수
+            public Wanted(T value)                         /// 매개변수
             {
                 this.Value = value;
             }

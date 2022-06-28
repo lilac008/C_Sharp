@@ -49,7 +49,7 @@ namespace Ch11
 
             g.DrawRectangle(blackPen, rect);   ///도형그리기
             g.FillRectangle(redBrush, rect);   ///도형 색 채우기
-        }
+        } 
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -77,6 +77,11 @@ namespace Ch11
             myRect.Y += 10;   /// 도형 떨어뜨리기,  -=하면 위로 올라간다.
 
             Invalidate();     /// 다시 그리도록 갱신
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

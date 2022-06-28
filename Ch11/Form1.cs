@@ -1,3 +1,5 @@
+using Ch11;
+
 namespace tem3
 {
     public partial class Form1 : Form    ///ctrl 누른상태에서 클릭
@@ -89,5 +91,9 @@ namespace tem3
             form2.ShowDialog();    ///form2.Show();
         }
 
+        private void btnForm3_Click(object sender, EventArgs e)
+        {
+            new Form3().ShowDialog();
+        }
     }
 }

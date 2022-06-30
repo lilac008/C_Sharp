@@ -8,5 +8,7 @@ namespace Test._02
 {
     internal class _2_06
     {
+        //void - return값이 없음
+
     }
 }

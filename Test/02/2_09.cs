@@ -8,5 +8,6 @@ namespace Test._02
 {
     internal class _2_09
     {
+
     }
 }

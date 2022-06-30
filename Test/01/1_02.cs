@@ -8,5 +8,9 @@ namespace Test._01
 {
     internal class _1_02
     {
+        static void Main1(string[] args)
+        {
+
+        }
     }
 }

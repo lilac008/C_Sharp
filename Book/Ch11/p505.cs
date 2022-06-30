@@ -5,40 +5,45 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-///     이름있는 Delegate 형식 : 
-/// 
-///     접근제한자 - delegate - 반환형 - delegateName([매개변수]);    //delegate class의 상속을 받는 class를 선언
-///
-/// 
-/// 
-///
+///     Delegate :  (무명 deligate와 다르니 주의!!)
+///     
+///     접근제한자 - delegate - 반환형 - delegateName( 매개변수 );    -  delegate class의 상속을 받는 class를 선언
+///     
+
+
 
 namespace Book.Ch11
 {
-    public delegate void Test1();               /// delegate 생성 위치 (class 외부)
+    public delegate void TestA();                        /// class 외부에 delegate 선언
+
 
     internal class p505
     {
-        public delegate void Test2();          /// delegate 생성 위치 (class 내부)
+        public delegate void TestB();                   /// class 내부에 delegate 선언
 
-        public delegate void TestDelegate();
 
-        static void Main(string[] args)
+
+
+
+
+        static void Main1(string[] args)
         {
-            Test1 d1;                            /// delegate 자료형으로 변수 선언
-            Test2 d2;                            /// delegate 자료형으로 변수 선언
+            TestA dA;                                   /// delegate자료형    변수;  선언
+            TestB dB;
 
 
-            TestDelegate dA = TestMethod;              ///1) 메서드 이름을 사용한 초기화
-            TestDelegate dB = delegate () { };         ///2) 무명 대리자를 사용한 초기화
-            TestDelegate dC = () => { };               ///3) lamda를 사용한 초기화
+            TestB d1 = Method_N;                       ///1) method명을 이용한 초기화
+            TestB d2 = delegate () { };                ///2) 무명 deligate를 사용한 초기화
+            TestB d3 = () => { };                      ///3) lamda(익명 deligate)를 사용한 초기화
 
-            dA();                                      ///대리자는 일반 method처럼 호출이 가능
-            dB();
-            dC();
+            d1();                                      ///deligate는 일반 method처럼 호출이 가능
+            d2();
+            d3();
         }
 
-        static void TestMethod() { }
+        static void Method_N() 
+        { 
+        }
 
 
     }

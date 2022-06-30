@@ -10,10 +10,8 @@ using System.Threading.Tasks;
 ///  내 용 : Lamda (p500)
 ///  
 /// 
-///   Lamda : 함수적 프로그래밍을 지원하기 위한 문법 식
-///           Delegate를 더 편하게 사용하기 위한 간단한 방식 (익명method라고 한다.)
-/// 
-/// 
+///   Lamda(익명method) : Delegate를 더 편하게 사용하기 위한 간단한 방식
+
 
 namespace Ch09
 {

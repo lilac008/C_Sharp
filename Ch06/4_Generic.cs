@@ -5,16 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 날짜 : 2022 / 06 / 14
- * 이름 : 최희원
- * 내용 : Generic (p395)
- *
- *  Generic : - class 내부 변수의 타입을 동적으로 일반화시키는 문법
- *            - class의 범용성을 갖도록 활용
- *
- */
-
+///     날짜 : 2022 / 06 / 14
+///     이름 : 최희원
+///     내용 : Generic (p395)
+///
+///     Generic : class 내부 변수의 타입을 동적으로 일반화시킴. class의 범용성을 갖도록 활용.
+///                     
 
 
 namespace Ch06
@@ -23,7 +19,7 @@ namespace Ch06
     {
         private T fruit;
 
-        public T Fruit                         /// Getter, Setter
+        public T Fruit                         /// Get, Set
         {
             get { return fruit; }
             set { fruit = value; }
@@ -40,8 +36,8 @@ namespace Ch06
             Banana banana = new Banana("대만", 4000);
 
             FruitBox<Apple> box1 = new FruitBox<Apple>();
-            box1.Fruit = apple;                                /// setter 호출, 초기화 (생성자로 초기화한 것이 아님)
-            box1.Fruit.show();                                 /// getter 호출, 초기화
+            box1.Fruit = apple;                                /// set 호출, 초기화 (생성자로 초기화한 것이 아님)
+            box1.Fruit.show();                                 /// get 호출, 초기화
 
             FruitBox<Banana> box2 = new FruitBox<Banana>();
             box2.Fruit = banana;

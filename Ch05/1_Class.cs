@@ -6,18 +6,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-/*
- * 날짜 : 2022/06/08
- * 이름 : 최희원
- * 내용 : Class와 Object(객체) 실습 (p203)
- * 
- * 
- *   Class : object의 설계도, object를 생성하는 구조체이며, Method와 Field(속성)로 구성된다.
- *   
- *   Oject : class의 실제 instance(object를 소프트웨어에 실체화)이며, new 연산자로 생성한다.
- *  
- */
-
+///
+///     날짜 : 2022/06/08
+///     이름 : 최희원    
+///     내용 : Class와 Object(객체) 실습 (p203)
+///
+///     Class : object의 설계도, object를 생성하는 구조체이며, Method와 Field(속성)로 구성된다.
+///     
+///     Oject : class의 실제 instance(object를 소프트웨어에 실체화)이며, new 연산자로 생성한다.
+/// 
 
 
 namespace Ch05

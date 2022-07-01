@@ -5,26 +5,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 날짜 : 2022/06/09
- * 이름 : 최희원
- * 내용 : Polymorphism(다형성) p340
- * 
- * 
- *   Polymorphism : 
- *   - override를 활용해 모클래스의 기능이 자식클래스에서 여러 기능으로 변함. (하나의 모class가 여러 형태로 변환)
- *   - object의 타입선언을 모클래스로 선언
- *   
- * 
- * 母 Animal
- * move();
- * run
- * 
- * 子 Tiger   子 Eagle   子 Shark
- * move();     move();   move();
- * run         fly       swim
- * 
- */
+///
+/// 날짜 : 2022/06/09
+/// 이름 : 최희원
+/// 내용 : Polymorphism(다형성) p340
+/// 
+/// 
+///   Polymorphism : override를 활용해 모클래스의 기능이 자식클래스에서 여러 기능으로 변함. (하나의 모class가 여러 형태로 변환)
+///                 - object의 타입선언을 모클래스로 선언
+///
+///
+/// 母 Animal
+///  move();
+///   run
+///
+///子 Tiger   子 Eagle   子 Shark
+///move();     move();   move();
+///run         fly       swim
+///
+
 
 namespace Ch05
 {

@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-///    대리자 활용 : 1)  Callback Method : 매개변수로 전달하는 method
+///    deligate 활용
+///    1)  Callback Method : 매개변수로 전달하는 method
 
 
 namespace Book.Ch11
@@ -13,7 +14,6 @@ namespace Book.Ch11
     {
         class Student 
         {
-
             public string Name;
             public double Score;
 
@@ -37,11 +37,38 @@ namespace Book.Ch11
 
             public void Add(Student student) 
             {
-                
+                listofStudent.Add(student);
+            }
+
+            public void Print() 
+            {
+                Print( (student) => {Console.WriteLine(student);}  );
+            }
+
+            public void Print(PrintProcess process) 
+            {
+                foreach (var item in listOfStudent) { process(item); }
             }
 
         }
 
+        static void Main1(string[] args)
+        {
+            Students students = new Students();
+            students.Add(new Student("윤인성", 4.2));
+            students.Add(new Student("연하진", 4.4));
+
+            students.Print();
+            students.Print((student) => 
+            {
+                Console.WriteLine();
+                Console.WriteLine("이름 : " + students.Name);
+                Console.WriteLine("학점 : " + students.Score);
+            });
+
+
+
+        }
 
 
 

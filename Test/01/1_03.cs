@@ -12,7 +12,7 @@ namespace Test._01
         {
 			int x = 4;
 			int y = -2;
-			int z;                //int의 기본값은 0이다.
+			int z;								 ///int의 기본값은 0이다.
 
 			z = x + y;
 			Console.WriteLine("x + y = " + z);

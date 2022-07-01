@@ -4,18 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 
- * 날짜 : 2022 / 06 / 14
- * 이름 : 최희원
- * 내용 : Indexer (p398)
- *
- *
- *  Indexer : - object를 배열처럼 index를 사용해서 object의 데이터를 참조할 수 있게 해주는 속성
- *            - Indexer를 method로 대체 가능
- *  
- *  
- */
+///
+/// 날짜 : 2022 / 06 / 14
+/// 이름 : 최희원
+/// 내용 : Indexer (p398)
+///
+///
+/// Indexer : - object를 배열처럼 index를 사용해서 object의 데이터를 참조할 수 있게 해주는 속성
+///            - Indexer를 method로 대체 가능
 
 
 namespace Ch06

@@ -5,15 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 날짜 : 2022/06/08
- * 이름 : 최희원
- * 내용 : 캡슐화 실습 (p203)
- * 
- *  캡슐화(Encapsulation) : Object의 Field(내용)을 외부에서 참조하지 못하도록 Object의 정보를 은닉
- *                         - 캡슐화를 위한 접근 제한자 public, private, protected를 제공
- *                         - 은닉된 정보의 안전한 세공을 위해 Getter와 Setter를 제공 (C#에서 Property)
- */
+
+///
+///     날짜 : 2022/06/08
+///     이름 : 최희원    
+///     내용 : Encapsulation (캡슐화) (p203)
+///
+///     Encapsulation : Object의 Field를 외부에서 참조하지 못하도록 Object의 정보를 은닉
+///                     - 접근제한자 public, private, protected를 제공
+///                     - 은닉된 정보의 안전한 제공을 위해 Get, Set을 제공 (C#에서 Property)
+/// 
 
 
 namespace Ch05

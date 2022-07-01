@@ -4,44 +4,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 
- * 날짜 : 2022/06/07
- * 이름 : 최희원
- * 내용 : Stack  (p275)
- * 
- * 
- */
+
+///
+///     날짜 : 2022/06/07
+///     이름 : 최희원    
+///     내용 :  Stack  (p275)
+///
+
 
 namespace Ch04
 {
     internal class _4_MethodStack
     {
 
-        public static int Sum(int start, int end)
+        public static int Sum(int sta, int end)
         {
-            int total = 0;
+            int tot = 0;
 
-            for (int k = start; k <= end; k++)
+            for (int k=sta; k <= end; k++)
             {
-                total += k;
+                tot += k;
             }
-            return total;
-
+            return tot;
         }
 
 
         static void Main1(string[] args)
         {
-
             int result = 0;
-            int n1 = 1;
-            int n2 = 10;
+            int a = 1;
+            int b = 10;
 
-            result = Sum(n1, n2);
+            result = Sum(a, b);
 
             Console.WriteLine("결과 : " + result);
-
         }
 
 

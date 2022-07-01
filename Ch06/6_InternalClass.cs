@@ -4,15 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 날짜 : 2022 / 06 / 14
- * 이름 : 최희원
- * 내용 : 내장 클래스 ()
- *
- *  
- * 
- *  
- */
+///
+///     날짜 : 2022 / 06 / 14
+///     이름 : 최희원
+///     내용 : 내장 클래스 ()
+/// 
+
 
 
 namespace Ch06

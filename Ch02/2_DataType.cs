@@ -4,30 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+///
+///     날짜 : 2022/06/02
+///     이름 : 최희원
+///     내용 : Data Type(자료형)  (p83)
+/// 
+/// 
+///     Data Type : 변수에 저장되는 데이터의 종류와 크기를 Data Type으로 선언, 크게 기본형과 참조형으로 나뉨.
+///     
+///     ex)  sbyte  : 1byte, signed integer(정수),      -128 ~ 127
+///          byte   : 1byte, unsigned integer,             0 ~ 255
+///          short  : 2byte, unsigned integer,       -32,766 ~ 32,767
+///          int    : 4byte unsigned integer, -2,147,483,648 ~ 2,127,483,647
+///          long   : 8byte unsigned integer,  
+///          float  : 4byte Real Number(실수),
+///          double : 8byte Real Number, 
+///          char   : character(문자)
+///          string : 문자열
+///          bool   : true / false 
+///          object : 명시적인 타입의 선언 없이도 variable 선언이 가능
+///          var    : 명시적인 타입의 선언 없이도 variable 선언이 가능
+///
 
-/*
- * 날짜 : 2022/06/02
- * 이름 :최희원
- * 내용 : Data Type(자료형)  (p83)
- * 
- * 
- * 
- * [Data Type]
- * - 변수에 저장되는 데이터의 종류와 크기를 Data Type으로 선언
- * - Data Type은 크게 기본형과 참조형으로 나뉨
- * 
- * [Data Type 종류]
- * sbyte :
- * byte : 
- * int : 4byte 정수
- * long : 8byte 정수
- * float : 4byte 실수
- * double : 8byte 실수
- * char : 문자
- * string : 문자열
- * bool : true / false 
- * 
- */
 
 namespace Ch02
 {
@@ -35,12 +33,12 @@ namespace Ch02
     {
         static void Main1(string[] args)
         {
-            // Integer Type (정수형)
-            sbyte i1 = 127;            //1byte, 부호 있는 정수, -128 - 127
-            byte i2 = 255;            //1byte, 부호 없는 정수, 0 - 255
-            short i3 = 32767;          //2byte, 부호 없는 정수, -32,766 - 32,767
-            int i4 = 2147483647;     //4byte, 부호 없는 정수, -2,147,483,648 - 2,127,483,647
-            long i5 = 2147483648L;    //8byte, 부호 없는 정수, 교재참고
+            /// Integer Type
+            sbyte i1 = 127;             
+            byte i2 = 255;             
+            short i3 = 32767;           
+            int i4 = 2147483647;        
+            long i5 = 2147483648L;      
 
             Console.WriteLine("integer1 : {0}", i1);
             Console.WriteLine("integer2 : {0}", i2);
@@ -50,7 +48,7 @@ namespace Ch02
             Console.WriteLine();
 
 
-            // Real Number Type (실수형)
+            /// Real Number Type 
             float r1 = 1.123456789f;
             double r2 = 1.12345678901234567890;
 
@@ -59,7 +57,7 @@ namespace Ch02
             Console.WriteLine();
 
 
-            // Logical Type (논리형)
+            /// Logical Type 
             bool b1 = true;
             bool b2 = false;
 
@@ -68,7 +66,7 @@ namespace Ch02
             Console.WriteLine();
 
 
-            // Character Type (문자형)
+            /// Character Type 
             char c1 = 'A';
             char c2 = '가';
 
@@ -77,7 +75,7 @@ namespace Ch02
             Console.WriteLine();
 
 
-            // String Type (문자열)
+            /// String Type 
             string s1 = "A";
             string s2 = "가";
             string s3 = "Apple";
@@ -92,7 +90,7 @@ namespace Ch02
             Console.WriteLine();
 
 
-            // Object Type (명시적인 타입의 선언 없이도 변수를 선언하는 것이 가능)
+            /// Object Type 
             object o1 = 11;
             object o2 = 3.141592;
             object o3 = true;
@@ -107,7 +105,7 @@ namespace Ch02
             Console.WriteLine();
 
 
-            // Var Type (명시적인 타입의 선언 없이도 변수를 선언하는 것이 가능)  
+            /// Var Type 
             var v1 = 11;
             var v2 = 3.141592;
             var v3 = true;

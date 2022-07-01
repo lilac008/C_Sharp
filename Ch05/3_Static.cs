@@ -5,20 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 날짜 : 2022/06/08
- * 이름 : 최희원
- * 내용 : class variable, class method  (p225)
- * 
- *    Class variable, Class method(정적 변수)
- *    - static 변수, Data영역 메모리 공간에 하나의 class로 관리
- *    - class Type(객체 생성x)으로 직접 참조
- * 
- *    Singleton object 
- *    - 하나의 instance만 생성할 수 있으며 하나의 instance로 공유한다.
- *    - 메모리 절약, 성능 향상
- */
 
+///
+///     날짜 : 2022/06/08
+///     이름 : 최희원    
+///     내용 : class variable, class method   (p225)
+///
+///     Class variable, Class method : - static 변수, Data영역 메모리 공간에 하나의 class로 관리
+///                                   - class Type(객체 생성x)으로 직접 참조
+///                                   
+///     Singleton object : 하나의 instance만 생성할 수 있으며 하나의 instance로 공유한다.
+///                        - 메모리 절약, 성능 향상
 
 
 namespace Ch05

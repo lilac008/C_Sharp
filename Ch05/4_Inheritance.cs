@@ -6,15 +6,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-/*
- * 날짜 : 2022/06/09
- * 이름 : 최희원
- * 내용 : class Inheritance(상속) (p225)
- * 
- * 
- *   Inheritance : 모class가 가지고 있는 field, method를 그대로 물려받은 식 class. 
- *                 공통적인 모클래스를 두고 자식 클래스에서 상속받아 일관되고 효율적인 프로그래밍을 수행.
- */
+///
+///     날짜 : 2022/06/09
+///     이름 : 최희원    
+///     내용 : Class Inheritance (상속) (p225)
+///
+///
+///     Inheritance : 모class가 가지고 있는 field와 method를 그대로 물려받은 자식 class. 
+///                   - 공통적인 모클래스를 두고 자식 클래스에서 상속받아 일관되고 효율적인 프로그래밍을 수행.
+///
 
 
 namespace Ch05

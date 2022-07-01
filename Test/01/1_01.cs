@@ -19,9 +19,9 @@ namespace Test._01
 			bool var6 = true;
 			bool var7 = false;
 			string var8 = "hello";
-			string var9 = null;                   ///Reference 변수 : string, object 가능
-			object var10 = null;                   
-			//var	var11 = null;                   
+			string var9 = null;                   
+			/// object var10 = null;
+			/// var	var11 = "안녕하세요";                   
 
 			Console.WriteLine("var1 : " + var1);
 			Console.WriteLine("var2 : " + var2);

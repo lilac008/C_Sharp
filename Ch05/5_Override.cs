@@ -4,19 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- *  날 짜 : 2022/06/09
- *  이 름 : 최희원
- *  내 용 : Override  (p225)
- * 
- *   Hide : 같은 이름으로 멤버를 만들어 모클래스의 멤버를 숨김.
- *  
- *   Overload : 동일 이름을 사용해서 method를 여러개 만듬.
- * 
- *   Overrride : 모class에 있는 method를 식class에서 재정의(식클래스로 덮어씌움).
- *               Overrride를 통해 다형성을 실현한다.
- */
-
+///
+///     날짜 : 2022/06/09
+///     이름 : 최희원    
+///     내용 : Override  (p225)
+///
+///
+///     Hide : 같은 이름으로 멤버를 만들어 모클래스의 멤버를 숨김.
+///     Overload : 동일 이름을 사용해서 method를 여러개 만듬.
+///     Overrride : 모class에 있는 method를 식class에서 재정의(식클래스로 덮어씌움). Overrride를 통해 다형성을 실현한다.
+///
+/// 
 ///  AAA
 ///  method1()
 ///  method2()

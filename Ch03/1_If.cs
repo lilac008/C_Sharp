@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 날짜 : 2022/06/03
- * 이름 : 최희원
- * 내용 : 조건문 If (p127)
- * 
- * 
- */
+///
+///     날짜 : 2022/06/03
+///     이름 : 최희원    
+///     내용 : If(true값) 조건문 (p127)
+/// 
 
 
 namespace Ch03
@@ -19,7 +17,7 @@ namespace Ch03
     {
         static void Main1(string[] args)
         {
-            // If
+            /// If(true) { }
             int a1 = 1;
             int a2 = 2;
 
@@ -31,6 +29,7 @@ namespace Ch03
             { Console.WriteLine("a1은 a1보다 크다."); }
             Console.WriteLine();
 
+
             if (a1 > 0)
             {
                 if (a2 > 1)
@@ -39,15 +38,17 @@ namespace Ch03
             }
             Console.WriteLine();
 
+
             if (a1 > 0 && a2 > 1)
-            { Console.WriteLine("a1은 0보다 크고 그리고 a2는 1보다 크다."); }
+            { Console.WriteLine("a1은 0보다 크고 (그리고) a2는 1보다 크다."); }
 
             Console.WriteLine();
             Console.WriteLine("=============================");
 
 
 
-            // If ~ else
+            /// If(true) {   }
+            /// else {  }
             int b1 = 1, b2 = 2;
 
             if (b1 > b2)
@@ -60,7 +61,9 @@ namespace Ch03
 
 
 
-            // If ~ else if ~ else
+            /// If(true) {   }
+            /// else if(true) {  } 
+            /// else {  }
             int n1 = 10, n2 = 20, n3 = 30, n4 = 40;
 
             if (n1 > n2)

@@ -33,27 +33,30 @@ namespace Ch04
             remainder = a % b;
         }
 
+
+
         static void Main1(string[] args)
         {
 
-            /// ref 매개변수
-            int num1 = 10;
-            int num2 = 3;
-            int num3 = 0;
-            int num4 = 0;
-
-            Divider1(num1, num2, ref num3, ref num4);
-
-            Console.WriteLine("몫 : {0}, 나머지 : {1}", num3, num4);
-
-
-            /// out 매개변수
+            /// Reference(참조) 매개변수
             int n1 = 10;
             int n2 = 3;
+            int n3 = 0;
+            int n4 = 0;
 
-            Divider2(n1, n2, out int n3, out int n4);
+            Divider1(n1, n2, ref n3, ref n4);
 
             Console.WriteLine("몫 : {0}, 나머지 : {1}", n3, n4);
+
+
+
+            /// Out(출력) 매개변수
+            int nu1 = 10;
+            int nu2 = 3;
+
+            Divider2(nu1, nu2, out int nu3, out int nu4);
+
+            Console.WriteLine("몫 : {0}, 나머지 : {1}", nu3, nu4);
 
         }
 

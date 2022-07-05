@@ -59,13 +59,13 @@ namespace Ch05
 
     class CCC : BBB
     {
-        public new void Method1()                           /// Method Hiding : CCC의 Method1이 BBB의 Method1을 숨김
+        public new void Method1()                        /// Hiding : CCC의 Method1이 BBB의 Method1을 숨김
         { Console.WriteLine("CCC::Method1..."); }
 
-        public override void Method2()                     /// Method Override : CCC의 Method2가 BBB의 Method2를 덮어씌움
+        public override void Method2()                   /// Override : CCC의 Method2가 BBB의 Method2를 덮어씌움
         { Console.WriteLine("CCC::Method2..."); }
 
-        public override void Method3()                    /// Method Override : CCC의 Method3이 AAA의 Method3을 덮어씌움
+        public override void Method3()                   /// Override : CCC의 Method3이 AAA의 Method3을 덮어씌움
         { Console.WriteLine("CCC::Method3..."); }
     }
 
@@ -87,6 +87,7 @@ namespace Ch05
             b.Method1();
             b.Method2();
             b.Method3();
+            b.Method3(1);
             Console.WriteLine();
 
             c.Method1();
@@ -94,8 +95,6 @@ namespace Ch05
             c.Method3();
             c.Method3(1);
             Console.WriteLine();
-
-
 
         }
     }

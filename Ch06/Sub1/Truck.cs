@@ -8,25 +8,28 @@ namespace Ch06.Sub1
 {
     internal class Truck : Car
     {
+        /// Field
         private int capacity;
 
+
+        /// Constructor
         public Truck(string name, string color, int speed, int capacity) : base(name, color, speed)
         {
             this.capacity = capacity;
         }
 
+
+        /// Method
         public override void SpeedUp(int speed)
         {
             Console.WriteLine("Truck SpeedUp ...");
             base.speed += speed;
         }
-
         public override void SpeedDown(int speed)
         {
             Console.WriteLine("Truck SpeedDown ...");
             base.speed -= speed;
         }
-
         public override void Show()
         {
             Console.WriteLine("====================");

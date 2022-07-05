@@ -13,7 +13,8 @@ namespace Ch06.Sub1
         protected string color;
         protected int speed;
 
-        /// constructor
+
+        /// Constructor
         public Car(string name, string color, int speed)
         {
             this.name = name;
@@ -21,10 +22,10 @@ namespace Ch06.Sub1
             this.speed = speed;
         }
 
-        /// method
+
+        /// Method
         public abstract void SpeedUp(int speed);          /// abstract method  -  p static v라고 하지 않는다. 클래스 정의할때 쓰임. / virtual?
         public abstract void SpeedDown(int speed);
-
         public virtual void Show()
         {
             Console.WriteLine("=================");

@@ -16,6 +16,17 @@ namespace Ch04
 {
     internal class _4_MethodStack
     {
+        static void Main1(string[] args)
+        {
+            int result = 0;
+            int a = 1;
+            int b = 10;
+
+            result = Sum(a, b);
+
+            Console.WriteLine("결과 : " + result);
+        }
+
 
         public static int Sum(int sta, int end)
         {
@@ -29,16 +40,7 @@ namespace Ch04
         }
 
 
-        static void Main1(string[] args)
-        {
-            int result = 0;
-            int a = 1;
-            int b = 10;
 
-            result = Sum(a, b);
-
-            Console.WriteLine("결과 : " + result);
-        }
 
 
 

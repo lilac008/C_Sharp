@@ -19,37 +19,42 @@ namespace Ch04
 
         static void Main1(string[] args)
         {
-            ///Type1                                       
-            double y1 = TypeA(0.1);                  
-            double y2 = TypeA(1.2);
+            ///TypeA                                       
+            double a1 = TypeA(0.1);                  
+            double a2 = TypeA(1.2);
 
-            Console.WriteLine("y1 : " + y1);
-            Console.WriteLine("y2 : " + y2);
+            Console.WriteLine("a1 : " + a1);
+            Console.WriteLine("a2 : " + a2);
             Console.WriteLine();
 
-            ///Type2 
+
+            ///TypeB
             TypeB(true);                             
             TypeB(false);
 
             Console.WriteLine();
 
-            ///Type3 
+
+            ///TypeC
             string result = TypeC();
             Console.WriteLine("Type3 result : " + result);
 
             Console.WriteLine();
 
-            ///Type4 
+
+            ///TypeD
             TypeD();
         }
 
-        public static double TypeA(double x)               ///매개변수 o , 리턴값 o
+
+        public static double TypeA(double x)               /// 매개변수 o, 리턴값 o
         {
             double y = x + 3.14;
             return y;
         }
 
-        public static void TypeB(bool status)             ///매개변수 o , 리턴값 x
+
+        public static void TypeB(bool status)             /// 매개변수 o, 리턴값 x
         {
             if (status)
             { Console.WriteLine("참"); }
@@ -57,7 +62,8 @@ namespace Ch04
             { Console.WriteLine("거짓"); }
         }
 
-        public static string TypeC()                      ///매개변수 x , 리턴값 o
+
+        public static string TypeC()                      /// 매개변수 x, 리턴값 o
         {
             int n1 = 1, n2 = 2;
 
@@ -67,7 +73,8 @@ namespace Ch04
                 return "n1은 n2보다 작다.";
         }
 
-        public static void TypeD()                        ///매개변수 x , 리턴값 x
+
+        public static void TypeD()                        /// 매개변수 x, 리턴값 x
         {
             double result = TypeA(1.121);
             Console.WriteLine("Type4 result : " + result);

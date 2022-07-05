@@ -8,25 +8,28 @@ namespace Ch06.Sub1
 {
     internal class Sedan : Car                         ///모class가 protected가 되어야 
     {
+        /// Field
         private int cc;
 
+
+        /// Constructor
         public Sedan(string name, string color, int speed, int cc) : base(name, color, speed)
         {
             this.cc = cc;
         }
 
-        public override void SpeedDown(int speed)
-        {
-            Console.WriteLine("Sedan SpeedDown ...");
-            base.speed -= speed;
-        }
 
+        /// Method
         public override void SpeedUp(int speed)
         {
             Console.WriteLine("Sedan SpeedUp ...");
             base.speed += speed;
         }
-
+        public override void SpeedDown(int speed)
+        {
+            Console.WriteLine("Sedan SpeedDown ...");
+            base.speed -= speed;
+        }
         public override void Show()
         {
             Console.WriteLine("====================");

@@ -31,16 +31,18 @@ namespace Ch06
 
 
             /// 다형성 적용
-            Car sedan = new Sedan("그랜저", "검정색", 0, 2000);
-            Car truck = new Truck("포터", "파란색", 0, 1);
+            Car s = new Sedan("그랜저", "검정색", 0, 2000);
+            Car t = new Truck("포터", "파란색", 0, 1);
 
-            sedan.SpeedUp(100);
-            sedan.SpeedDown(20);
-            sedan.Show();
+            s.SpeedUp(100);
+            s.SpeedDown(20);
+            s.Show();
+            Console.WriteLine();
 
-            truck.SpeedUp(80);
-            truck.SpeedDown(10);
-            truck.Show();
+            t.SpeedUp(80);
+            t.SpeedDown(10);
+            t.Show();
+            Console.WriteLine();
         }
 
     }

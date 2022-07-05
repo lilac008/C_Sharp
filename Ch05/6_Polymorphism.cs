@@ -19,9 +19,9 @@ using System.Threading.Tasks;
 ///  move();
 ///   run
 ///
-///子 Tiger   子 Eagle   子 Shark
-///move();     move();   move();
-///run         fly       swim
+/// 子 Tiger   子 Eagle   子 Shark
+/// move();     move();   move();
+/// run         fly       swim
 ///
 
 
@@ -32,7 +32,7 @@ namespace Ch05
         static void Main1(string[] args)
         {
             /// Polymorphism을 적용한 object 생성
-            Animal a1 = new Tiger();                     ///Tiger tiger = new Tiger(); 의 바뀐 형태
+            Animal a1 = new Tiger();                     ///Tiger t = new Tiger(); 의 바뀐 형태
             Animal a2 = new Eagle();                     
             Animal a3 = new Shark();
 
@@ -42,24 +42,29 @@ namespace Ch05
 
 
             /// object type 캐스팅 (Animal Hunt가 없을시)
-            Tiger tiger = (Tiger)a1;                    
-            Eagle eagle = a2 as Eagle;                  /// (Eagle) a2; 의 바뀐 형태
-            Shark shark = a3 as Shark;                  /// (shark) a3; 의 바뀐 형태
+            Tiger t = (Tiger)a1;
+            Eagle e = (Eagle)a2;
+            Shark s = (Shark)a3;
 
-            tiger.Hunt();                              ///a1.Hunt();   ???
-            eagle.Hunt();
-            shark.Hunt();
+            //Tiger t = a1 as Tiger;                  /// (Tiger)a1; 의 바뀐 형태
+            //Eagle e = a2 as Eagle;                  /// (Eagle)a2; 의 바뀐 형태
+            //Shark s = a3 as Shark;                  /// (shark)a3; 의 바뀐 형태
+
+            t.Hunt();
+            e.Hunt();
+            s.Hunt();
+            Console.WriteLine();
 
 
             /// object type 확인
             if (a1 is Tiger)                               
-            { Console.WriteLine("a1은 Tiger입니다."); }
+            { Console.WriteLine("a1은 Tiger Class입니다."); }
 
             if (a2 is Eagle)
-            { Console.WriteLine("a2은 Eagle입니다."); }
+            { Console.WriteLine("a2은 Eagle Class입니다."); }
 
             if (a3 is Shark)
-            { Console.WriteLine("a3은 Shark입니다."); }
+            { Console.WriteLine("a3은 Shark Class입니다."); }
 
 
 

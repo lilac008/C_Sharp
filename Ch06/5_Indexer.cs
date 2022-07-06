@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 ///
-/// 날짜 : 2022 / 06 / 14
+/// 날짜 : 2022/06/14
 /// 이름 : 최희원
 /// 내용 : Indexer (p398)
 ///
@@ -32,13 +32,9 @@ namespace Ch06
             set
             {
                 if (i < array.Length)
-                {
-                    array[i] = value;
-                }
+                { array[i] = value; }
                 else
-                {
-                    Console.WriteLine("더 이상 데이터를 저장 할 수 없습니다.");
-                }
+                { Console.WriteLine("더 이상 데이터를 저장할 수 없습니다."); }
             }
         }
 

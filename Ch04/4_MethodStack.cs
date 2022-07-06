@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 ///
 ///     날짜 : 2022/06/07
 ///     이름 : 최희원    
-///     내용 :  Stack  (p275)
+///     내용 : Method Stack  (p275)
 ///
 
 

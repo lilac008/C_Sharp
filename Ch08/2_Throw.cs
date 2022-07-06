@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 ///  이름 : 최희원
 ///  내용 : Throw (p479)
 ///   
-/// 
-///  
+ 
 
 namespace Ch08
 {

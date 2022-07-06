@@ -4,18 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 
- * 날짜 : 2022 / 06 / 15
- * 이름 : 최희원
- * 내용 : Collection - Queue  ()
- * 
- * 
- *  Queue
- *    First in First Out(선입선출) 구조 : 순서대로 입력된 데이터를 차례대로
- * 
- * 
- */
+///
+///     날짜 : 2022/06/15
+///     이름 : 최희원
+///     내용 : Collection - Queue
+///
+/// 
+///     Queue :  First in First Out (선입선출 구조 : 순서대로 입력된 데이터를 차례대로)
+
 
 
 

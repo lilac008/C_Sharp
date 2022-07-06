@@ -7,20 +7,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-/*
- * 
- * 날짜 : 2022 / 06 / 15
- * 이름 : 최희원
- * 내용 : Collection - ArrayList ()
- * 
- * 
- *  
- * Array(배열) : 정적 자료구조 (크기가 고정.  ex) 4개로 지정하면 5개로 늘릴 수 없다.)
- * ArrayList   : 배열과 유사한 동적 선형 자료구조, 입력되는 데이터에따라 크기가 늘어나며 각 데이터를 처리할 수 있는 기능을 제공
- * List        : ArrayList를 일반화시킨 컬렉션. ArrayList보다 더 나은 성능. 
- * 
- * 
- */
+///     날짜 : 2022/06/15
+///     이름 : 최희원
+///     내용 : Collection - ArrayList 
+///
+/// 
+///     Array     : 정적 자료구조 (크기 고정. ex)4개로 지정하면 5개로 늘릴 수 없다.)
+///     ArrayList : 동적 선형 자료구조 (입력되는 데이터에 따라 크기가 늘어나며 각 데이터를 처리할 수 있는 기능 제공)
+///     List      : ArrayList를 일반화시킨 Collection. ArrayList보다 더 나은 성능. 
+/// 
 
 
 

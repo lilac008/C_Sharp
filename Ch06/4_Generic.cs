@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-///     날짜 : 2022 / 06 / 14
+///     날짜 : 2022/06/14
 ///     이름 : 최희원
 ///     내용 : Generic (p395)
 ///

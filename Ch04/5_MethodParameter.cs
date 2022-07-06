@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 ///
 ///     날짜 : 2022/06/07
 ///     이름 : 최희원    
-///     내용 :  parameter (매개변수) 
+///     내용 : Method parameter (매개변수) 
 ///
 /// 
 ///     ref 매개변수 : 변수의 reference(주소) 값으로 참조값이 가리키는 실제 변수에 값을 대입하는 매개변수

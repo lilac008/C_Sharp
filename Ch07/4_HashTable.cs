@@ -6,28 +6,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
- * 
- * 날짜 : 2022 / 06 / 15
- * 이름 : 최희원
- * 내용 : Collection - HashTable, Dictionary ()
- * 
- * HashTable : Key-Value(키와 값)의 쌍으로 이루어진 자료구조
- *             키를 이용해 ArrayList보다 탐색 속도가 빠르고 편리
- * 
- * Dictionary : HashTable을 일반화시킨 컬렉션.
- *              HashTable보다 더 나은 성능을 제공.
- * 
- * 
- * ex)
- * Key Value
- * A   Apple
- * B   Banana
- * C   Cherry
- * 
- * 
- * 
- */
+///
+///     날짜 : 2022/06/15
+///     이름 : 최희원
+///     내용 : Collection - HashTable, Dictionary 
+/// 
+/// 
+///     HashTable : Key-Value(키, 값)의 쌍으로 이루어진 자료구조
+///                 키를 이용해 ArrayList보다 탐색 속도가 빠르고 편리
+/// 
+///     Dictionary : HashTable을 일반화시킨 Collection. HashTable보다 더 나은 성능을 제공.
+///
+///     ex)
+///     Key Value
+///      A   Apple
+///      B   Banana
+///      C   Cherry
+
 
 
 namespace Ch07

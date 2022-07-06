@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 ///
-///     날짜 : 2022 / 06 / 14
+///     날짜 : 2022/06/14
 ///     이름 : 최희원
-///     내용 : 내장 클래스 ()
+///     내용 : Internal Class (내장 클래스) ()
 /// 
 
 
@@ -32,48 +32,50 @@ namespace Ch06
             Console.WriteLine("반올림 : " + Math.Round(1.8));
             Console.WriteLine();
 
+
             /// 2. Random Class  (p207)
-            Random random = new Random();
+            Random r = new Random();
 
-            int rand1 = random.Next();
+            int rand1 = r.Next();
+            int rand2 = r.Next(10);
+            int rand3 = r.Next(1, 11);
+
             Console.WriteLine("rand1 : " + rand1);
-
-            int rand2 = random.Next(10);
             Console.WriteLine("rand2 : " + rand2); /// 0 ~ 9 사이의 임의의 정수
-
-            int rand3 = random.Next(1, 11);
             Console.WriteLine("rand3 : " + rand3); /// 1 ~ 10 사이의 임의의 정수
-
-            double num1 = random.NextDouble();
-            Console.WriteLine("num1 : " + num1); /// 0 ~ 1 사이의 임의의 실수
-
-            double num2 = num1 * 10;
-            Console.WriteLine("num2 : " + num2); /// 0 ~ 10 사이의 임의의 실수
-
-            double num3 = Math.Ceiling(num2);
-            Console.WriteLine("num3 : " + num3); /// 1 ~ 10 사이의 임의의 정수
             Console.WriteLine();
+
+
+            double n1 = r.NextDouble();
+            double n2 = n1 * 10;
+            double n3 = Math.Ceiling(n2);
+
+            Console.WriteLine("num1 : " + n1); /// 0 ~ 1 사이의 임의의 실수
+            Console.WriteLine("num2 : " + n2); /// 0 ~ 10 사이의 임의의 실수
+            Console.WriteLine("num3 : " + n3); /// 1 ~ 10 사이의 임의의 정수
+            Console.WriteLine();
+
 
 
             /// 3. DateTime Class           
             /// singleton object
-            DateTime now = DateTime.Now;
+            DateTime d = DateTime.Now;
 
-            Console.WriteLine("now : " + now);
+            Console.WriteLine("now : " + d);
 
             /// 개별 시간 데이터 출력
-            Console.WriteLine("년 : " + now.Year);
-            Console.WriteLine("월 : " + now.Month);
-            Console.WriteLine("일 : " + now.Day);
-            Console.WriteLine("시 : " + now.Hour);
-            Console.WriteLine("분 : " + now.Minute);
-            Console.WriteLine("초 : " + now.Second);
+            Console.WriteLine("년 : " + d.Year);
+            Console.WriteLine("월 : " + d.Month);
+            Console.WriteLine("일 : " + d.Day);
+            Console.WriteLine("시 : " + d.Hour);
+            Console.WriteLine("분 : " + d.Minute);
+            Console.WriteLine("초 : " + d.Second);
 
             /// 문자열 Format
-            string result1 = now.ToString("yyyy-MM-dd");
+            string result1 = d.ToString("yyyy-MM-dd");
             Console.WriteLine("result1 : " + result1);
 
-            string result2 = now.ToString("yy-MM-dd hh:mm:ss");
+            string result2 = d.ToString("yy-MM-dd hh:mm:ss");
             Console.WriteLine("result2 : " + result2);
 
 

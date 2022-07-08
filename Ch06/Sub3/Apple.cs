@@ -11,22 +11,19 @@ namespace Ch06.Sub3
         private string country;
         private int price;
 
-        public Apple(string country, int price)              ///constructor
+
+        public Apple(string country, int price)              
         {
             this.country = country;
             this.price = price;
         }
+
 
         public void show()
         {
             Console.WriteLine("사과 원산지 : " + country);
             Console.WriteLine("사과 가격 : " + price);
         }
-
-
-
-
-
 
     }
 }

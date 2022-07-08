@@ -12,12 +12,14 @@ namespace Test._04
         public string Country { get; set; }
         public int Birth { get; set; }
 
+
         public Artists(string name, string country, int birth)
         {
             Name = name;
             Country = country;
             Birth = birth;
         }
+
 
         public override string ToString()
         {
@@ -27,7 +29,7 @@ namespace Test._04
 
     internal class _4_07
     {
-        static void Main7(string[] args)
+        static void Main1(string[] args)
         {
             Artists[] famousArts = {
                 new Artists("레오나르도 다빈치", "이탈리아", 1452),
@@ -37,7 +39,8 @@ namespace Test._04
                 new Artists("파블로 피카소", "스페인", 1881)
             };
 
-            foreach (Artists art in famousArts)
+            /// foreach (Var art in famousArts) 
+            foreach (Artists art in famousArts) 
                 Console.WriteLine(art.ToString());
         }
     }

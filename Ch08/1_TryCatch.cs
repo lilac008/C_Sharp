@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 ///  날짜 : 2022/06/20 
 ///  이름 : 최희원
-///  내용 : Exception Handling (예외처리) (p497)   
+///  내용 : Try Catch Finally (예외처리 문) (p497)   
 ///   
 
 
@@ -23,7 +23,7 @@ namespace Ch08
             }
         }
 
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
 
             ///  try-catch  :  

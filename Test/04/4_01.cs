@@ -21,7 +21,7 @@ namespace Test._04
 
         public override string ToString()
         {
-            return string.Format($"{x}, {y}, {z}");
+            return string.Format($" {x}, {y}, {z} ");
         }
     }
 

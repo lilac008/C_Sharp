@@ -14,7 +14,7 @@ namespace Test._03
 
 		public Car(string company, string name, int price)
 		{
-			this.company = company;        ///초기화
+			this.company = company;							 ///매개변수로 초기값 재설정 
 			this.name = name;
 			this.price = price;
 		}
@@ -26,7 +26,7 @@ namespace Test._03
 
 		public void Show()
 		{
-			Drive();
+			Drive();										///다른 method 포함
 			Console.WriteLine("제조사 : " + company);
 			Console.WriteLine("차량명 : " + name);
 			Console.WriteLine("가격 : " + price);

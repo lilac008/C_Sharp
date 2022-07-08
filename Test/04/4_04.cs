@@ -13,11 +13,11 @@ namespace Test._04
 
         public MyGeneric(int length)
         {
-            arr = new T[length];
+            arr = new T[length];                    /// 생성자 new T[]의 배열길이, length만큼 배열 칸 수가 나뉨.
             count = length;
         }
 
-        public void Insert(params T[] args)
+        public void Insert(params T[] args)         ///params 키워드 :          (parameters) , args : arguments 약어
         {
             for (int i = 0; i < args.Length; i++)
             {
@@ -27,7 +27,7 @@ namespace Test._04
 
         public void Print()
         {
-            foreach (T i in arr)
+            foreach (T i in arr)                    /// Var i in arr  에서  T i in arr 로 변형. 둘다 가능.
                 Console.Write(i + " ");
             Console.WriteLine();
         }
@@ -47,4 +47,5 @@ namespace Test._04
             mg2.Print();
         }
     }
+
 }

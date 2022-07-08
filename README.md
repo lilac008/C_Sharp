@@ -30,7 +30,7 @@
 ## Ch06. 클래스 심화
 	- 1. Abstract Class  추상 클래스
 	- 2. Interface		 인터페이스
-	- 3. Structure		 구조체
+	- 3. Struct			 구조체
 	- 4. Generic		 제네릭
 	- 5. Indexer		 인덱서
 	- 6. Internal Class  내장 클래스

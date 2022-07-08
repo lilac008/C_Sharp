@@ -28,8 +28,8 @@ namespace Test._03
 
 	class CarFactory
 	{
-		private static CarFactory instance = new CarFactory();   // new CarFactory();를 static에 고정
-		private CarFactory() { }                                //CarFactory();를 new 못하도록 private
+		private static CarFactory instance = new CarFactory();     /// new CarFactory();를 static(정적)에 고정
+		private CarFactory() { }                                   /// CarFactory();를 new 못하도록 private
 
 		public static CarFactory Instance
 		{
@@ -46,10 +46,10 @@ namespace Test._03
 	{
 		static void Main1(string[] args)
 		{
-			CarFactory factory = CarFactory.Instance;
+			CarFactory f = CarFactory.Instance;
 
-			Vehicle avante = factory.MakeCar("아반테", 2500);
-			Vehicle sonata = factory.MakeCar("소나타", 3000);
+			Vehicle avante = f.MakeCar("아반테", 2500);
+			Vehicle sonata = f.MakeCar("소나타", 3000);
 
 			avante.Show();
 			sonata.Show();

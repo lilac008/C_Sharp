@@ -8,29 +8,30 @@ namespace Test._04
 {
     class MyIndexer<T>
     {
-        private T[] array = new T[10];
+        private T[] arr = new T[10];
 
         public T this[int i]
         {
-            get { return array[i]; }
-            set { array[i] = value; }
+            get { return arr[i]; }
+            set { arr[i] = value; }
         }
     }
 
     internal class _4_06
     {
-        static void Main6(string[] args)
+        static void Main1(string[] args)
         {
-            var myIndexer = new MyIndexer<string>();
+            /// MyIndexer m = new MyIndexer<string>();
+            var m = new MyIndexer<string>();
 
-            myIndexer[0] = "Hello, World!";
-            myIndexer[1] = "Hello, Korea!";
-            myIndexer[2] = "Hello, Busan!";
-            myIndexer[3] = "Hello, C#!";
+            m[0] = "Hello, World!";
+            m[1] = "Hello, Korea!";
+            m[2] = "Hello, Busan!";
+            m[3] = "Hello, C#!";
 
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine(myIndexer[i]);
+                Console.WriteLine(m[i]);
             }
         }
     }

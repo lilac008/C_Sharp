@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Test._05
 {
-    internal class _5_06
-    {
-    }
+
+
+
+
 }
+

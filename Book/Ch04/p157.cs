@@ -10,7 +10,7 @@ namespace Book.Ch04
     {
         static void Main1(string[] args)
         {
-            // 그냥 반복
+            /// 반복
             Console.WriteLine("출력");
             Console.WriteLine("출력");
             Console.WriteLine("출력");
@@ -19,7 +19,7 @@ namespace Book.Ch04
             Console.WriteLine();
 
 
-            // For 반복   (지정 횟수만큼)
+            /// For 반복   (지정 횟수만큼)
             for (int i = 0; i < 100; i++)
             {
                 Console.WriteLine("출력");
